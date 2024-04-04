@@ -1678,8 +1678,7 @@ a {
   text-align: center;
   padding-top: 0.52083vw;
   line-height: 1.3;
-  width: 350px;
-  margin-left: -21px;
+  margin-bottom: 10px;
 }
 .direct-slider .direct-card .img-card {
   margin-top: auto;
@@ -1783,7 +1782,7 @@ a {
     padding-bottom: 86.67px;
   }
   .our-directions .titles .tit-desc {
-    max-width: 214.67px;
+    font-size: 14px;
     right: 73.34px;
   }
   .direct-slider .swiper-horizontal > .swiper-scrollbar {
@@ -1857,14 +1856,7 @@ a {
     margin-bottom: 2.625vw;
     padding-top: 5.46875vw;
   }
-  .our-directions .titles .tit-desc {
-    position: static;
-    max-width: 85vw;
-    border-color: #4a1260;
-    margin-left: auto;
-    margin-right: auto;
-    height: 19.6875vw;
-  }
+
   .our-directions .titles .title-h {
     max-width: 56.875vw;
     margin-bottom: 7.65625vw;
@@ -1896,6 +1888,8 @@ a {
   .direct-slider .direct-card .desc-card {
     font-size: 3.71875vw;
     padding-top: 2.1875vw;
+    width: 110%;
+    margin-left: -11px;
   }
   .direct-slider .direct-card .img-card {
     height: 41.125vw;
@@ -3833,6 +3827,10 @@ a {
   }
 }
 @media (max-width: 1280px) {
+  .our-directions .titles .tit-desc {
+    max-width: 21vw;
+    font-size: 1vw;
+  }
   .pink-screen {
     background: #f32d7a;
     padding-bottom: 0.52083vw;
@@ -4418,6 +4416,15 @@ a {
   }
 }
 @media (max-width: 520px) {
+  .our-directions .titles .tit-desc {
+    position: static;
+    max-width: 85vw;
+    font-size: 3.7vw;
+    border-color: #4a1260;
+    margin-left: auto;
+    margin-right: auto;
+    height: 19.6875vw;
+  }
   .start-section .top-start .pink-waves {
     padding-top: 0;
     margin-top: 2.1875vw;
@@ -4510,6 +4517,9 @@ a {
   overflow: hidden;
   -webkit-box-shadow: 0 0.78125vw 2.34375vw rgba(0, 0, 0, 0.9);
   box-shadow: 0 0.78125vw 2.34375vw rgba(0, 0, 0, 0.9);
+}
+.our-team .title-h span {
+  margin-right: 3px;
 }
 .our-team .tabs-content {
   display: -webkit-box;
@@ -4610,6 +4620,8 @@ a {
   box-shadow: none;
   padding-left: 0;
   padding-right: 0;
+  -webkit-box-shadow: inset 0 1.3125vw 4.375vw rgba(0, 0, 0, 0.2) !important;
+  box-shadow: inset 0 1.3125vw 4.375vw rgba(0, 0, 0, 0.2) !important;
 }
 .our-team .pers-tab.hidd-tab .person-cont {
   background-repeat: no-repeat;
@@ -4881,7 +4893,7 @@ a {
     margin-right: 21.875vw;
   }
   .our-team .pers-tab .person-name h4 {
-    font-size: 4.375vw;
+    font-size: 4.2vw;
   }
   .our-team .pers-tab .person-name p {
     font-size: 3.71875vw;
@@ -4889,20 +4901,21 @@ a {
   .our-team .pers-tab.hidd-tab {
     width: 100%;
     height: 21.875vw;
-    -webkit-box-shadow: inset 0 1.3125vw 4.375vw rgba(0, 0, 0, 0.4) !important;
-    box-shadow: inset 0 1.3125vw 4.375vw rgba(0, 0, 0, 0.4) !important;
   }
   .our-team .pers-tab.hidd-tab .person-cont {
     background: 0 0 !important;
   }
   .our-team .pers-tab.active-tab {
     height: 44.625vw;
-    background-image: url(../img/logo-big.svg);
-    background-repeat: no-repeat;
-    background-position: right -28.4375vw center;
-    background-size: auto 99%;
     margin-right: 0;
     margin-bottom: 1.53125vw;
+  }
+  .our-team .pers-tab.active-tab .icon-top {
+    margin-left: 0;
+  }
+  .our-team .pers-tab.active-tab .person-name {
+    margin-right: 40px;
+    text-align: right;
   }
   .our-team .pers-tab.active-tab:after {
     width: 100%;
@@ -4928,19 +4941,19 @@ a {
   }
   .our-team .pers-tab.active-tab .person-cont p {
     font-family: "Random Grotesque Spacious Book";
-    font-size: 1.75vw;
+    font-size: 1.9vw;
     text-align: left;
   }
   .our-team .pers-tab.active-tab .person-cont .person-foto {
     display: none;
   }
   .our-team .pers-tab.active-tab .person-cont .descript {
-    width: 39.375vw;
-    padding-left: 3.28125vw;
+    width: 43.375vw;
+    padding-left: 5.28125vw;
     padding-right: 3.28125vw;
   }
   .our-team .pers-tab.active-tab .person-cont .respon {
-    width: 26.25vw;
+    width: 31.25vw;
     text-align: left;
   }
   .our-team .pers-tab.active-tab .person-cont .restp-tit {
@@ -5469,6 +5482,9 @@ a {
   font-family: "Random Grotesque Spacious Black";
   text-align: center;
 }
+.works-content .part-work-title span {
+  margin-right: 2px;
+}
 @-webkit-keyframes waves-viol {
   0% {
     -webkit-transform: translateX(0);
@@ -5703,7 +5719,7 @@ a {
   }
   .eff-text .line-gradi {
     width: 33px;
-    height: calc(100% + 1vw);
+    height: calc(100% + 5vw);
   }
 }
 @media (max-width: 520px) {
@@ -5855,6 +5871,10 @@ a {
   right: 0;
   height: calc(100% + 25vw);
 }
+#work-images .line-gradi {
+  height: 150%;
+  bottom: -25px;
+}
 @media (min-width: 1280px) and (max-width: 1880px) {
   .work-images {
     height: 720px;
@@ -5976,7 +5996,7 @@ a {
 .mobi-section .mobi-text {
   position: absolute;
   left: 44%;
-  top: 10%;
+  top: 8%;
   background: #231f20;
   max-width: 47.91667vw;
   padding: 0.78125vw 1.823vw 0.52083vw 1.823vw;
@@ -5986,7 +6006,7 @@ a {
   line-height: 1.4;
   text-align: justify;
   font-family: "Random Grotesque Spacious Book";
-  z-index: 0;
+  z-index: -1;
   max-height: 142.5px;
 }
 .mobi-section .mobi-text span {
@@ -6042,8 +6062,6 @@ a {
     height: 720px;
   }
   .mobi-section .mobi-text {
-    left: 44%;
-    top: 10%;
     max-width: 613px;
     padding: 10px 26.6px 6.67px 20px;
     border-radius: 16px;
@@ -6323,7 +6341,7 @@ a {
     height: auto;
   }
   .descript-section .title-ribbon {
-    margin-top: -20px;
+    margin-top: -28px;
     height: 102%;
     width: 6.125vw;
     position: absolute;
@@ -6697,7 +6715,7 @@ a {
 }
 .look-section .look-flex .text-block {
   width: 45.15625vw;
-  padding: 3.125vw 1.04167vw 1.5625vw 1.5625vw;
+  padding: 2.34375vw 1.04167vw 2.34375vw 1.5625vw;
   background: #ededed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6757,7 +6775,7 @@ a {
   }
   .look-section .look-flex .text-block {
     width: 544px;
-    padding: 43px 13px 20px 20px;
+    padding: 31.5px 13px 31.5px 20px;
     gap: 17px;
     border-radius: 33px;
   }
@@ -7951,7 +7969,12 @@ a {
   font-family: "Random Grotesque Spacious Black";
   font-size: 5.41667vw;
 }
+.header-works .text-content h2 a {
+  text-decoration: none;
+  margin-right: 3px;
+}
 .header-works .text-content h2 span {
+  margin-right: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
@@ -8815,6 +8838,9 @@ a {
 }
 .conts-header .heads-cont h1 .three {
   margin-left: 2.60417vw;
+}
+.conts-header .heads-cont h1 a {
+  margin-right: 3px;
 }
 .conts-header .raket-3 {
   position: absolute;
