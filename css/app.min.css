@@ -2464,7 +2464,7 @@ a {
   align-items: center;
 }
 .pink-screen .about-bottom .three-grid .three-grid-text p {
-  font-size: 14px;
+  font-size: 16px;
 }
 .footer-black .info-us .tt-us,
 .start-section .story-section .story-text h2,
@@ -6422,7 +6422,7 @@ a {
     align-items: center;
   }
   .pink-screen .about-bottom .three-grid .three-grid-text p {
-    font-size: 1.09375vw;
+    font-size: 1.275vw;
   }
   .content {
     max-width: 100%;
@@ -6509,7 +6509,7 @@ a {
     padding-bottom: 0.83333vw;
   }
   .pink-screen .wt-textblock p {
-    font-size: 1vw;
+    font-size: 1.05vw;
     line-height: 1.4;
   }
   .pink-screen .about-bottom {
@@ -6627,7 +6627,7 @@ a {
     align-items: center;
   }
   .pink-screen .about-bottom .three-grid .three-grid-text p {
-    font-size: 1.09375vw;
+    font-size: 1.2375vw;
   }
   .content {
     max-width: 100%;
