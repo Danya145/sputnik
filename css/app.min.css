@@ -1267,7 +1267,7 @@ a {
 }
 .first-main .prop-items .prop-item {
   color: #5b5b5b;
-  font-size: 1.4167vw;
+  font-size: 1.3167vw;
   margin-bottom: 0.23438vw;
   text-align: right;
   display: -webkit-box;
@@ -3340,7 +3340,7 @@ a {
   height: calc(100% + 25vw);
 }
 #work-images .line-gradi {
-  height: 150%;
+  height: 145%;
   bottom: -25px;
 }
 .mobi-section {
@@ -3355,7 +3355,7 @@ a {
   padding: 0.78125vw 1.823vw 0.52083vw;
   border-radius: 1.25vw;
   color: #f2f2f2;
-  font-size: 1.05vw;
+  font-size: 1vw;
   line-height: 1.4;
   text-align: justify;
   font-family: "Random Grotesque Spacious Book";
