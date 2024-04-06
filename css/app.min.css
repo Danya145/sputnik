@@ -474,6 +474,7 @@ a {
   gap: 0.36458vw;
   font-size: 1.77083vw;
   line-height: 0.85;
+  display: none;
 }
 .menu-top .translate-button span {
   padding-top: 0.26042vw;
@@ -1059,6 +1060,7 @@ a {
     gap: 4.67px;
     font-size: 22.67px;
     line-height: 0.85;
+    display: none;
   }
   .menu-top .translate-button span {
     padding-top: 3.34px;
@@ -2346,9 +2348,10 @@ a {
 .pink-screen .wt-textblock p {
   color: #161616;
   font-family: "Random Grotesque Standard Book";
-  font-size: 14px;
+  font-size: 1.1vw;
   line-height: 1.4;
 }
+
 .pink-screen .about-bottom {
   position: relative;
   display: -ms-grid;
@@ -2392,9 +2395,10 @@ a {
   grid-row: 1/3;
   background: url(../img/grid-group-back.png) center center/contain no-repeat;
   height: 404px;
+  background-size: 100% 100%;
 }
 .pink-screen .about-bottom .two-grid .two-grid-text {
-  width: 288.6px;
+  width: 30%;
   height: 112px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2453,7 +2457,7 @@ a {
   position: absolute;
   right: 0;
   bottom: 16.67px;
-  width: 355px;
+  width: 32%;
   height: 127px;
   padding: 6.67px 22px 6.67px 30px;
   display: -webkit-box;
@@ -2462,9 +2466,6 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-.pink-screen .about-bottom .three-grid .three-grid-text p {
-  font-size: 16px;
 }
 .footer-black .info-us .tt-us,
 .start-section .story-section .story-text h2,
@@ -4868,6 +4869,9 @@ a {
   background: #707070;
 }
 @media (min-width: 1280px) and (max-width: 1880px) {
+  .pink-screen .about-top-right .about-top-text p {
+    font-size: 75%;
+  }
   .back-words .sol,
   .back-words .spt {
     height: 80px;
@@ -5965,7 +5969,7 @@ a {
   .header-works .text-content .tags-flex a {
     width: 126.65px;
     height: 33.3px;
-    font-size: 12.67px;
+    font-size: 16.67px;
     border-radius: 33.33px;
   }
   .w-foot:after {
