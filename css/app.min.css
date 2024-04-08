@@ -628,7 +628,7 @@ a {
   }
   .hamburger-menu {
     position: relative;
-    height: 0.21875vw18px;
+    height: 18px;
     width: 7.4375vw;
   }
   .bar {
@@ -1047,12 +1047,6 @@ a {
   .direct-slider .swiper-slide-active .direct-card .round-white {
     background: url(../img/arr-wht.svg) center center/1.71875vw auto no-repeat #f32d7a;
   }
-  .works-items .work-item .block-fon .work-text p {
-    opacity: 0;
-    -webkit-transition: 0.6s;
-    -o-transition: 0.6s;
-    transition: 0.6s;
-  }
   .works-items .work-item:hover .block-fon .work-text p {
     opacity: 1;
   }
@@ -1357,6 +1351,7 @@ a {
   width: 3.125vw;
   height: 0.05208vw;
   background: #b7b7b7;
+  margin-top: 2px;
 }
 .first-main .left-bottom {
   max-width: 33.85417vw;
@@ -1843,6 +1838,7 @@ a {
 }
 .can-item.card-six ul {
   max-width: 31.92708vw;
+  background: transparent;
 }
 .can-item.card-six .fon-img {
   position: absolute;
@@ -7031,6 +7027,9 @@ a {
   .section-form .info-us .info {
     font-size: 2.625vw;
   }
+  .can-item.card-five ul {
+    font-size: 2.76vw;
+  }
   .can-item.card-six {
     height: 63.4375vw;
     -webkit-box-shadow: 0 2.1875vw 2.1875vw rgba(0, 0, 0, 0.1);
@@ -7080,7 +7079,7 @@ a {
   }
   .cases-mob .case-card .case-text p {
     max-width: 390px;
-    font-size: 2.5vw;
+    font-size: 2.7vw;
     line-height: 1.4;
   }
   .cases-section {
@@ -7418,7 +7417,7 @@ a {
   }
   .start-section .story-section .story-text {
     width: 100%;
-    height: 105vw;
+    height: 115vw;
     padding-left: 4.375vw;
     padding-right: 4.375vw;
   }
@@ -7429,7 +7428,7 @@ a {
     font-size: 5.46875vw;
   }
   .start-section .story-section .story-text p {
-    font-size: 2.5vw;
+    font-size: 2.7vw;
     padding-bottom: 3.28125vw;
     line-height: 1.4;
   }
@@ -7671,7 +7670,7 @@ a {
     width: 21vw;
     height: 7vw;
     border-radius: 1.09375vw;
-    font-size: 2.1875vw;
+    font-size: 2.5875vw;
     text-shadow: 0 0 1px #161616;
     -webkit-box-shadow: 0 1.09375vw 2.1875vw 0 rgba(0, 0, 0, 0.5);
     box-shadow: 0 1.09375vw 2.1875vw 0 rgba(0, 0, 0, 0.5);
@@ -7708,7 +7707,7 @@ a {
   }
   .part-content .right-cont .part-text p {
     font-family: "Random Grotesque Spacious Book";
-    font-size: 2.825vw;
+    font-size: 2.95vw;
     line-height: 1.3;
   }
   .viol-waves {
@@ -8315,8 +8314,17 @@ a {
     padding-top: 6.5625vw;
   }
   .scroll-section .scroll-container .swiper-wrapper .swiper-slide {
-    width: 102.8125vw;
+    width: 97.8125vw;
     margin: 0 4.375vw 6.5625vw 0;
+  }
+  .scroll-section .scroll-container .top-line .swiper-wrapper {
+    margin-left: 87px;
+  }
+  .scroll-section .scroll-container .middle-line .swiper-wrapper {
+    margin-left: -52px;
+  }
+  .scroll-section .scroll-container .bottom-line .swiper-wrapper {
+    margin-left: 78px;
   }
   .scroll-section .mobile-version .scroll-container .bottom-line.swiper-container,
   .scroll-section .mobile-version .scroll-container .top-line.swiper-container {
@@ -8349,6 +8357,9 @@ a {
     position: absolute;
     bottom: 37.1875vw;
     width: 27.125vw;
+  }
+  .masters-section .content .logo-mob {
+    z-index: 1;
   }
   .masters-section .masters-text {
     border-radius: 5.46875vw;
@@ -8659,6 +8670,8 @@ a {
     left: 50%;
     margin-left: -13.5625vw;
     z-index: 2;
+    top: 76%;
+    transform: translateX(-2%);
   }
   .conts-header .scroll-block .round {
     width: 28vw;
