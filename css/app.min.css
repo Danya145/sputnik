@@ -2990,7 +2990,7 @@ a {
   border-radius: 0.52083vw;
   font-size: 0.88542vw;
   color: #161616;
-  text-shadow: 0 0 1px #161616;
+  /* text-shadow: 0 0 1px #161616; */
   -webkit-box-shadow: 0 0.52083vw 1.04167vw 0.10417vw rgba(0, 0, 0, 0.75);
   box-shadow: 0 0.52083vw 1.04167vw 0.10417vw rgba(0, 0, 0, 0.75);
 }
@@ -3892,11 +3892,7 @@ a {
   margin-right: auto;
   position: relative;
 }
-.info-text .info-border .text-board {
-  margin-top: -275px;
-  height: 200%;
-  width: 200%;
-}
+
 .info-text .info-border .text-bord,
 .info-text .info-border .text-bord-mob {
   position: absolute;
@@ -4974,6 +4970,7 @@ a {
   .our-directions .titles .tit-desc {
     font-size: 14px;
     right: 73.34px;
+    margin-right: -60px;
   }
   .direct-slider .swiper-horizontal > .swiper-scrollbar {
     bottom: -80px;
@@ -5167,6 +5164,9 @@ a {
     width: 251px;
     bottom: -26.67px;
     right: 13.33px;
+  }
+  .can-item.card-six .card-img5 {
+    right: 91%;
   }
   .cases-flat {
     height: 153px;
@@ -5693,7 +5693,7 @@ a {
     right: -23px;
   }
   .descript-section .text-container .text-block .inner-content .p p {
-    font-size: 17px;
+    font-size: 16px;
   }
   .descript-section .text-container .text-block .inner-content .author-sign {
     margin-top: 30px;
@@ -7724,7 +7724,7 @@ a {
     height: 7vw;
     border-radius: 1.09375vw;
     font-size: 2.5875vw;
-    text-shadow: 0 0 1px #161616;
+    /* text-shadow: 0 0 1px #161616; */
     -webkit-box-shadow: 0 1.09375vw 2.1875vw 0 rgba(0, 0, 0, 0.5);
     box-shadow: 0 1.09375vw 2.1875vw 0 rgba(0, 0, 0, 0.5);
     padding-top: 0.21875vw;
