@@ -598,6 +598,9 @@ a {
   border-radius: 0 0 0 100px;
 }
 @media (max-width: 520px) {
+  .prop-items .swiper-container {
+    background-image: url("../img/ellipse.png");
+  }
   .menu-links a,
   .menu-top:not(.scrolled-fix).viol-menu .translate-button span {
     color: #161616;
