@@ -1356,7 +1356,7 @@ a {
   content: "";
   display: block;
   width: 3.125vw;
-  height: 0.05208vw;
+  height: 0.5px;
   background: #b7b7b7;
   margin-top: 2px;
 }
@@ -1845,7 +1845,8 @@ a {
 }
 .can-item.card-six ul {
   max-width: 31.92708vw;
-  background: transparent;
+  filter: drop-shadow(0 1.04167vw 1.5625vw rgba(0, 0, 0, 0.8));
+  opacity: 0.75;
 }
 .can-item.card-six .fon-img {
   position: absolute;
@@ -3111,7 +3112,7 @@ a {
   padding-bottom: 10px;
 }
 .work-item .work-text p {
-  font-size: 1.15vw;
+  font-size: 12.5px;
   line-height: 1.4;
   font-weight: 400;
 }
@@ -3278,11 +3279,7 @@ a {
   padding-top: 2.60417vw;
   padding-bottom: 3.125vw;
   height: 20.3125vw;
-  text-align: center;
-  font-size: 1.30208vw;
-  line-height: 1.3;
   max-width: 60.41667vw;
-  color: #000;
   display: flex;
   -webkit-box-pack: column;
   -ms-flex-pack: column;
@@ -3290,6 +3287,13 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.eff-text .text-center p {
+  width: 100%;
+  color: #000;
+  text-align: center;
+  font-size: 1.65vw;
+  line-height: 1.3;
 }
 .eff-text .line-gradi {
   background: -o-linear-gradient(338deg, #f22d7a 0, #932bbc 100%);
@@ -3385,6 +3389,9 @@ a {
   text-align: justify;
   z-index: -1;
   max-height: 142.5px;
+}
+.mobi-section .mobi-text span a {
+  color: #f2f2f2;
 }
 .mobi-section .img-top {
   position: absolute;
@@ -3482,6 +3489,7 @@ a {
   padding: 2.60417vw 4.16667vw 1.5625vw;
   border-radius: 1.04167vw;
 }
+.present-container .present-text .wrt-yes a,
 .descript-section .text-container .text-block .inner-content a {
   display: inline;
   text-decoration: underline;
@@ -3738,7 +3746,7 @@ a {
   font-size: 8.125vw;
   color: #942bbd;
   font-family: "Random Grotesque Spacious Black";
-  margin-bottom: -4.6875vw;
+  margin-bottom: -3.6875vw;
   text-transform: uppercase;
   display: block;
   width: 100%;
@@ -5571,11 +5579,13 @@ a {
     right: -100px;
   }
   .eff-text .text-center {
-    font-size: 17px;
     max-width: 798px;
     height: 236px;
     padding-top: 30px;
     padding-bottom: 40px;
+  }
+  .eff-text .text-center p {
+    font-size: 23px;
   }
   .eff-text .line-gradi {
     width: 33px;
@@ -5773,10 +5783,6 @@ a {
   .look-section .look-flex .text-block .look-text {
     width: 292px;
     font-size: 24px;
-  }
-  .footer-next .next-title {
-    font-size: 104px;
-    margin-bottom: -60px;
   }
   .present-section {
     padding-top: 26.67px;
@@ -6654,6 +6660,14 @@ a {
   }
 }
 @media (max-width: 520px) {
+  .footer-next .next-title {
+    font-size: 14vw;
+    margin-bottom: -35px;
+  }
+  .footer-next .next-title span {
+    font-size: 23vw;
+    line-height: 50%;
+  }
   .footer-works .content .rounds-desk {
     display: flex;
     flex-direction: column;
@@ -7101,6 +7115,12 @@ a {
     bottom: -13.125vw;
     right: auto;
     left: 30%;
+  }
+  .can-item.card-six .card-img5 {
+    right: 130%;
+    left: -71%;
+    bottom: -28%;
+    width: 41%;
   }
   .cans-slider {
     padding-bottom: 15.3125vw;
@@ -7836,9 +7856,11 @@ a {
   .eff-text .text-center {
     padding-top: 1.09375vw;
     padding-bottom: 1.09375vw;
-    font-size: 3.0625vw;
     max-width: 98%;
     height: 39.375vw;
+  }
+  .eff-text .text-center p {
+    font-size: 3.0625vw;
   }
   .work-images {
     height: auto;
@@ -8382,13 +8404,16 @@ a {
   .scroll-section .scroll-container .bottom-line .swiper-wrapper {
     margin-left: 78px;
   }
-  .scroll-section .mobile-version .scroll-container .bottom-line.swiper-container,
-  .scroll-section .mobile-version .scroll-container .top-line.swiper-container {
+  .scroll-section .mobile-version .scroll-container .bottom-line.swiper-container {
     margin-left: -16.40625vw;
     overflow: visible;
   }
+  .scroll-section .mobile-version .scroll-container .top-line.swiper-container {
+    margin-left: -17.40625vw;
+    overflow: visible;
+  }
   .scroll-section .mobile-version .scroll-container .middle-line.swiper-container {
-    margin-left: 16.40625vw;
+    margin-left: 14vw;
     overflow: visible;
   }
   .masters-section {
