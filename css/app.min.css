@@ -365,7 +365,8 @@ a {
 .pink-foto-container .foto-content .mob-foto,
 .present-section .img-block img.pres-mob,
 .scroll-section .mobile-version,
-.works-slider .swiper-slide .work-item:after {
+.works-slider .swiper-slide .work-item:after,
+.first-main .prop-items .swiper-mob {
   display: none;
 }
 .violet-button {
@@ -598,9 +599,6 @@ a {
   border-radius: 0 0 0 100px;
 }
 @media (max-width: 520px) {
-  .prop-items .swiper-container {
-    background-image: url("../img/ellipse.png");
-  }
   .menu-links a,
   .menu-top:not(.scrolled-fix).viol-menu .translate-button span {
     color: #161616;
@@ -6744,7 +6742,7 @@ a {
   }
   .first-main .right-bottom,
   .section-can {
-    padding-top: 8.75vw;
+    padding-top: 11.75vw;
   }
   .first-main .first-main-container .left-top {
     padding-bottom: 61.25vw;
@@ -6819,10 +6817,44 @@ a {
     overflow: visible;
   }
   .first-main .prop-items .swiper-container {
-    display: block;
+    display: none; /*  display: block;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden; */
+  }
+  .dark-screen {
+    position: relative;
+    z-index: 1;
+  }
+  .first-main .prop-items .swiper-mob {
+    display: block;
+    animation: 18s linear infinite scroll-round;
+    width: 100%;
+    height: 34%;
+    position: absolute;
+    z-index: 0;
+    top: 90vw;
+    left: 1vw;
+    transform-origin: 50% 100%;
+  }
+  .first-main .prop-items .swiper-mob div {
+    width: 98%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .first-main .prop-items .swiper-mob div img {
+    width: 100%;
+  }
+  .first-main .prop-items .swiper-mob .top {
     overflow: hidden;
+    height: 100%;
+  }
+  .first-main .prop-items .swiper-mob .bottom {
+    top: 96%;
+    height: 100%;
+    overflow: hidden;
+    transform: rotate(180deg);
   }
   .first-main .prop-items .swiper-container .swiper-wrapper {
     -webkit-box-align: center;
@@ -6870,12 +6902,12 @@ a {
       linear-gradient(226deg, #942bbd 0, #161616 100%);
   }
   .first-main .right-bottom .how-items {
-    width: 56.3125vw;
+    width: 51.3125vw;
     margin-right: auto;
     border-radius: 4.375vw;
   }
   .first-main .right-bottom .how-items .how-item {
-    font-size: 3.28125vw;
+    font-size: 3.09vw;
     padding-left: 3.28125vw;
     padding-right: 3.28125vw;
   }
