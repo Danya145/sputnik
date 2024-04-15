@@ -1844,8 +1844,7 @@ a {
 }
 .can-item.card-six ul {
   max-width: 31.92708vw;
-  filter: drop-shadow(0 1.04167vw 1.5625vw rgba(0, 0, 0, 0.8));
-  opacity: 0.75;
+  background: transparent;
 }
 .can-item.card-six .fon-img {
   position: absolute;
@@ -2262,6 +2261,9 @@ a {
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   padding-top: 2.55208vw;
+}
+.center-form .datas-flex span {
+  margin-right: 3px;
 }
 .section-form .info-us {
   color: #fff;
@@ -3389,7 +3391,6 @@ a {
   font-size: 1vw;
   line-height: 1.4;
   text-align: justify;
-  z-index: -1;
   max-height: 142.5px;
 }
 .mobi-section .mobi-text span a {
@@ -8720,6 +8721,7 @@ a {
     top: 0;
     left: 0;
     border-radius: 0 10.9375vw 0 0;
+    overflow: hidden;
   }
   .side-line.conts.left .text-line {
     top: -40vh;
@@ -8728,6 +8730,7 @@ a {
     top: 0;
     right: 0;
     border-radius: 10.9375vw 0 0;
+    overflow: hidden;
   }
   .conts-header {
     margin-top: 3.28125vw;
