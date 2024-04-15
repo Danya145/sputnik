@@ -4356,6 +4356,21 @@ a {
   position: relative;
   z-index: 3;
 }
+.tab .works-container .works-items.works-items-show {
+  animation: moveUp 1.2s;
+}
+
+@keyframes moveUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .works-items {
   width: 71.875vw;
   padding-left: 2.60417vw;
