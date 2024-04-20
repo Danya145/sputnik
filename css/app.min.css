@@ -227,8 +227,9 @@ body {
   padding-left: 2.65625vw;
   padding-right: 2.65625vw;
 }
-.mobi-section .mobi-text span,
-a {
+.mobi-section .mobi-text span {
+  color: white;
+  cursor: default;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -366,6 +367,7 @@ a {
 .our-team .pers-tab.hidd-tab .person-cont div,
 .pink-foto-container .foto-content .mob-foto,
 .present-section .img-block img.pres-mob,
+.present-section .img-block img.evenings-mob-img1,
 .scroll-section .mobile-version,
 .works-items:not(.works-items-show),
 .works-slider .swiper-slide .work-item:after {
@@ -596,9 +598,6 @@ a {
   line-height: 1;
   margin-left: -0.52083vw;
   white-space: nowrap;
-}
-.line-gradi {
-  border-radius: 0 0 0 100px;
 }
 @media (max-width: 520px) {
   .menu-links a,
@@ -3271,11 +3270,23 @@ a {
 .open-screen .logo-first.right {
   right: -7.8125vw;
 }
-.eff-text .text-center,
-.eff-text .text-justify {
+.eff-text .text-center {
   padding-top: 2.60417vw;
   padding-bottom: 3.125vw;
   height: 20.3125vw;
+  max-width: 60.41667vw;
+  display: flex;
+  -webkit-box-pack: column;
+  -ms-flex-pack: column;
+  justify-content: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.eff-text .text-justify {
+  padding-top: 2.60417vw;
+  padding-bottom: 3.125vw;
+  height: 23.3125vw;
   max-width: 60.41667vw;
   display: flex;
   -webkit-box-pack: column;
@@ -3303,6 +3314,7 @@ a {
   line-height: 1.3;
 }
 .eff-text .line-gradi {
+  border-radius: 0 0 0 100px;
   background: -o-linear-gradient(338deg, #f22d7a 0, #932bbc 100%);
   background: linear-gradient(112deg, #f22d7a 0, #932bbc 100%);
   width: 2.60417vw;
@@ -3310,6 +3322,16 @@ a {
   bottom: 0;
   right: 0;
   height: calc(100% + 5vw);
+}
+.eff-text .line-gradi-evenings {
+  border-radius: 0 0 0 100px;
+  background: -o-linear-gradient(338deg, #f22d7a 0, #932bbc 100%);
+  background: linear-gradient(112deg, #f22d7a 0, #932bbc 100%);
+  width: 2.60417vw;
+  position: absolute;
+  top: -26px;
+  right: 0;
+  height: 76%;
 }
 .work-images {
   width: 100%;
@@ -3651,8 +3673,17 @@ a {
   -ms-flex-align: center;
   align-items: center;
 }
+.look-section .look-flex.evenings {
+  height: 100%;
+}
 .look-section .look-flex .look-img {
   width: 25.83333vw;
+}
+.look-section .look-flex .look-img.evenings,
+.look-section .look-flex .look-img.evenings img {
+  position: relative;
+  top: -2%;
+  height: 100%;
 }
 .look-section .look-flex .look-img img {
   -webkit-box-shadow: 0 0 1.5625vw rgba(0, 0, 0, 0.4);
@@ -3685,12 +3716,18 @@ a {
   font-family: "Random Grotesque Spacious Black";
   white-space: nowrap;
 }
+.look-section .look-flex .text-block .procent.evenings {
+  font-size: 8.15625vw;
+}
 .look-section .look-flex .text-block .look-text {
   width: 22.76042vw;
   font-family: "Random Grotesque Standard Book";
   font-size: 1.725vw;
   color: #000;
   line-height: 1.4;
+}
+.look-section .look-flex .text-block .look-text.evenings {
+  font-size: 1.56vw;
 }
 .look-section .logo-look.left {
   left: -8.33333vw;
@@ -3766,19 +3803,35 @@ a {
 .present-section.padds {
   margin-top: 2.60417vw;
 }
-.present-section .img-block img.pres-desk {
+.present-section .img-block img.pres-desk,
+.present-section .img-block img.evenings-desk-img1 {
   border-radius: 2.1875vw;
   -webkit-box-shadow: 0 0.26042vw 1.5625vw rgba(0, 0, 0, 0.4);
   box-shadow: 0 0.26042vw 1.5625vw rgba(0, 0, 0, 0.4);
   width: 29.84375vw;
 }
-.present-section .logo-max {
+.present-section .img-block img.evenings-desk-img1 {
+  width: 50%;
+}
+.present-section .img-block img.evenings-img2 {
+  position: absolute;
+  top: 10%;
+  width: 28%;
+  left: 37%;
+}
+.present-section .logo-max,
+.present-section .logo-evening-max {
   position: absolute;
   top: 11.71875vw;
   left: 51%;
   width: 25.67708vw;
 }
-.present-section .present-text {
+.present-section .logo-evening-max {
+  top: 0%;
+  left: 78%;
+}
+.present-section .present-text,
+.present-section .present-evening-text {
   width: 100%;
   max-width: 70.83333vw;
   padding: 2.55208vw 3.38542vw 2.91667vw 4.42708vw;
@@ -3797,10 +3850,19 @@ a {
   box-shadow: 0 0.26042vw 1.5625vw rgba(0, 0, 0, 0.4);
   min-height: 13.75vw;
 }
+.present-section .present-evening-text {
+  border-radius: 25px;
+  background: #ea2d80;
+  max-width: 57vw;
+  font-size: 1.15vw;
+  min-height: 11.75vw;
+  padding: 1.08vw 1.38542vw 1.2667vw 1.42708vw;
+}
 .cards {
   height: 61.45833vw;
 }
-.cards .border-image-desk {
+.cards .border-image-desk,
+.cards .evenings-image-desk {
   width: 94.84375vw;
   height: 27.03125vw;
   gap: 1.82292vw;
@@ -3821,17 +3883,22 @@ a {
   transform: translateX(-50%);
   z-index: 1;
 }
-.cards .border-image-desk .text {
+.cards .border-image-desk .text,
+.cards .evenings-image-desk .text {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.cards .border-image-desk .image {
+.cards .border-image-desk .image,
+.cards .evenings-image-desk .image {
   width: 58.59375vw;
   height: 13.75vw;
   border-radius: 1.5625vw;
+}
+.cards .evenings-image-desk .image {
+  width: 80.59375vw;
 }
 .cards .border-image-desk .logo-img {
   width: 9.76563vw;
@@ -3926,6 +3993,10 @@ a {
   height: 11.51042vw;
   background-size: 100vw auto;
 }
+.scroll-section .anim-words .one.evenings,
+.scroll-section .anim-words .two.evenings {
+  height: 8.1vw;
+}
 .info-text .info-border .raket-img {
   width: 25.67708vw;
   position: absolute;
@@ -3957,6 +4028,10 @@ a {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+.scroll-section .anim-words.evenings {
+  height: 89%;
+  top: 4%;
+}
 .scroll-section .anim-words .one {
   -webkit-animation: 26s linear infinite go-left;
   animation: 26s linear infinite go-left;
@@ -3977,6 +4052,9 @@ a {
 .scroll-section .scroll-container .swiper-wrapper .swiper-slide {
   width: 41.5625vw;
   margin: 0 4.16667vw 3.125vw 0;
+}
+.scroll-section .desktop-version .scroll-container .top-line {
+  margin-bottom: 17px;
 }
 .scroll-section .desktop-version .scroll-container .bottom-line.swiper-container {
   margin-left: 6.51042vw;
@@ -4896,6 +4974,13 @@ a {
   background: #707070;
 }
 @media (min-width: 1280px) and (max-width: 1880px) {
+  .look-section .look-flex .text-block .procent.evenings {
+    font-size: 6.5625vw;
+    text-align: center;
+  }
+  .look-section .look-flex .look-img.evenings img {
+    top: 1%;
+  }
   .pink-screen .about-top-right .about-top-text p {
     font-size: 75%;
   }
@@ -5596,16 +5681,24 @@ a {
   .open-screen .logo-first.right {
     right: -100px;
   }
-  .eff-text .text-center,
-  .eff-text .text-justify {
+  .eff-text .text-center {
     max-width: 798px;
     height: 236px;
     padding-top: 30px;
     padding-bottom: 40px;
   }
+  .eff-text .text-justify {
+    height: 485px;
+    padding-top: 139px;
+    padding-bottom: 190px;
+  }
   .eff-text .line-gradi {
     width: 33px;
     height: calc(100% + 5vw);
+  }
+  .eff-text .line-gradi-evenings {
+    width: 33px;
+    height: 80%;
   }
   .mobi-section,
   .work-images {
@@ -5808,6 +5901,9 @@ a {
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
     width: 382px;
   }
+  .present-section .img-block img.evenings-img2 {
+    left: 33%;
+  }
   .present-section .logo-max {
     top: 150px;
     width: 328.65px;
@@ -5823,19 +5919,33 @@ a {
     box-shadow: 0 3.5px 20px rgba(0, 0, 0, 0.4);
     min-height: 176px;
   }
+  .present-section .present-evening-text {
+    height: 190px;
+    min-height: fit-content;
+    font-size: 0.8em;
+    width: 63%;
+    left: 29%;
+  }
   .cards {
     height: 787px;
   }
-  .cards .border-image-desk {
+  .cards .border-image-desk,
+  .cards .evenings-image-desk {
     width: 1214px;
     height: 346px;
     gap: 24px;
     top: 373px;
   }
+  .cards .evenings-image-desk {
+    left: 50%;
+  }
   .cards .border-image-desk .image {
     width: 750px;
     height: 176px;
     border-radius: 20px;
+  }
+  .cards .evenings-image-desk .image {
+    width: 1040px;
   }
   .cards .border-image-desk .logo-img {
     width: 125px;
@@ -6456,6 +6566,9 @@ a {
   }
 }
 @media (max-width: 1280px) {
+  .open-screen .title-work .title-item.evenings {
+    font-size: 1.4vw;
+  }
   .info-us .info-item .socials {
     width: 8vw;
   }
@@ -6685,6 +6798,17 @@ a {
   .works-container {
     z-index: 1;
   }
+  .eff-text .line-gradi-evenings {
+    height: 105%;
+    border-radius: 0;
+  }
+  .look-section .look-flex.evenings {
+    height: 78%;
+  }
+  .look-section .look-flex .look-img.evenings img {
+    top: 25%;
+    height: 77%;
+  }
   .footer-next .next-title {
     font-size: 14vw;
     margin-bottom: -35px;
@@ -6769,6 +6893,7 @@ a {
   .can-item.card-six .fon-img,
   .can-item.card-three .card-img,
   .cards .border-image-desk,
+  .cards .evenings-image-desk,
   .cases-flat .img-back,
   .cases-flat .line-top,
   .cases-section .back-words,
@@ -6802,6 +6927,7 @@ a {
   .pink-screen .about-top .descript span,
   .pink-screen .about-top-right,
   .present-section .img-block img.pres-desk,
+  .present-section .img-block img.evenings-desk-img1,
   .scroll-section .anim-words .one:first-child,
   .scroll-section .desktop-version,
   .section-can .scroll-round,
@@ -7021,6 +7147,7 @@ a {
   .look-section .logo-look.only-mob,
   .look-section .look-flex .text-block .look-text span,
   .look-section .look-fon.mob,
+  .look-section .look-fon.desk.evenings,
   .open-screen .logo-first.only-mob,
   .pink-foto-container .foto-content .mob-foto,
   .scroll-section .mobile-version {
@@ -7722,6 +7849,9 @@ a {
   .our-team .pers-tab.active-tab .person-cont .restp-tit {
     font-size: 3.0625vw;
   }
+  .eff-text .text-justify p {
+    margin-top: -16%;
+  }
   .footer-black {
     padding-top: 4.375vw;
     padding-left: 0;
@@ -7885,6 +8015,9 @@ a {
     font-size: 4.70313vw;
     width: 28%;
     letter-spacing: initial;
+  }
+  .open-screen .title-work .title-item.evenings {
+    font-size: 4vw;
   }
   .look-section .logo-look,
   .open-screen .logo-first {
@@ -8088,10 +8221,16 @@ a {
     height: 107%;
     border-radius: 100px 0 0;
   }
+  .descript-section .title-ribbon.right.five-names.evenings {
+    border-radius: 100px 0 0 100px;
+  }
   .descript-section .title-ribbon.left.five-names {
     left: 0;
     height: 107%;
     border-radius: 0 100px 0 0;
+  }
+  .descript-section .title-ribbon.left.five-names.evenings {
+    border-radius: 0 100px 100px 0;
   }
   .descript-section .text-container {
     max-width: 76.5625vw;
@@ -8212,6 +8351,11 @@ a {
     padding-bottom: 16.40625vw;
     margin-top: 14.21875vw;
   }
+  .look-section.evenings {
+    width: 102%;
+    left: -1%;
+    height: 720px;
+  }
   .look-section .look-flex {
     display: block;
     padding-top: 0;
@@ -8223,6 +8367,9 @@ a {
   .look-section .look-flex .look-img {
     width: 52.5vw;
     margin-bottom: 13.5625vw;
+  }
+  .look-section .look-flex .look-img.evenings {
+    margin-bottom: 0;
   }
   .look-section .look-flex .look-img img {
     border-radius: 4.375vw;
@@ -8260,11 +8407,18 @@ a {
     font-size: 10.9375vw;
     width: 37.1875vw;
   }
+  .look-section .look-flex .text-block .procent.evenings {
+    font-size: 16vw;
+    text-align: center;
+  }
   .look-section .look-flex .text-block .look-text {
     width: 46.8125vw;
     font-size: 3.17188vw;
     line-height: 1.3;
     font-weight: 700;
+  }
+  .look-section .look-flex .text-block .look-text.evenings {
+    font-size: 3.2vw;
   }
   .footer-next {
     padding-top: 13.125vw;
@@ -8285,6 +8439,9 @@ a {
     width: 82.25vw;
     height: 120.09375vw;
   }
+  .present-section .evenings-img-block {
+    height: 172.09375vw;
+  }
   .present-section .img-block img.pres-mob {
     border-radius: 6.5625vw;
     -webkit-box-shadow: 0 0 4.375vw rgba(0, 0, 0, 0.4);
@@ -8296,6 +8453,25 @@ a {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+  }
+  .present-section .img-block img.evenings-mob-img1 {
+    display: block;
+    position: relative;
+    top: 7%;
+    left: -10%;
+    width: 78vw;
+  }
+  .present-section .img-block img.evenings-img2 {
+    z-index: 1;
+    top: 25%;
+    left: 45%;
+    width: 51vw;
+  }
+  .present-section .logo-evening-max {
+    top: 45%;
+    left: 29%;
+    z-index: 1;
+    width: 50vw;
   }
   .present-section .logo-max {
     position: static;
@@ -8315,6 +8491,14 @@ a {
     -webkit-box-shadow: 0 1.09375vw 6.5625vw rgba(0, 0, 0, 0.4);
     box-shadow: 0 1.09375vw 6.5625vw rgba(0, 0, 0, 0.4);
     min-height: 43.75vw;
+  }
+  .present-section .present-evening-text {
+    max-width: none;
+    width: 89vw;
+    top: 76%;
+    left: 5%;
+    padding: 10px 16px;
+    font-size: 2.7vw;
   }
   .present-section .present-text p:before {
     content: "";
@@ -8372,7 +8556,7 @@ a {
     padding-bottom: 3.28125vw;
   }
   .cards .cards-container .card-item img {
-    max-height: 100%;
+    height: 100%;
     border-radius: 6.5625vw;
     -webkit-box-shadow: 0 0 2.1875vw rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 2.1875vw rgba(0, 0, 0, 0.2);
