@@ -9138,6 +9138,9 @@ body {
   }
 }
 @media (max-width: 390px) {
+  .footer-next .next-title {
+    margin-bottom: -18px;
+  }
   .scroll-section .mobile-version .scroll-container .top-line.swiper-container {
     margin-left: -20.40625vw;
   }
