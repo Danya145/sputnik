@@ -3236,8 +3236,8 @@ body {
   background: -o-linear-gradient(62deg, #f22d7a 0, #932bbc 100%);
   background: linear-gradient(28deg, #f22d7a 0, #932bbc 100%);
 }
-.eff-text .text-center,
-.eff-text .text-justify,
+.eff-text .text-center p,
+.eff-text .text-justify p,
 .open-screen .title-work .title-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6791,6 +6791,9 @@ body {
   }
 }
 @media (max-width: 520px) {
+  .scroll-section .anim-words.evenings {
+    top: 3%;
+  }
   .case-contain,
   .dark-screen,
   .descript-section,
@@ -7855,11 +7858,10 @@ body {
     text-align: left;
   }
   .descript-section .text-container .text-block .inner-content .p p,
-  .eff-text .text-center p,
-  .eff-text .text-justify p,
   .our-team .pers-tab.active-tab .person-cont .restp-tit {
     font-size: 3.0625vw;
   }
+  .eff-text .text-center p,
   .eff-text .text-justify p {
     margin-top: -16%;
   }
@@ -8047,8 +8049,13 @@ body {
   .eff-text .text-justify {
     padding-top: 1.09375vw;
     padding-bottom: 1.09375vw;
-    max-width: 98%;
+    max-width: 92%;
     height: 39.375vw;
+  }
+  .eff-text .text-center p,
+  .eff-text .text-justify p {
+    text-align: center;
+    font-size: 2.8vw;
   }
   .work-images {
     height: auto;
