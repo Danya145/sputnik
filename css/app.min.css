@@ -343,6 +343,9 @@ body {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
 }
+.top-header.side-menu {
+  position: relative;
+}
 .arr-pink:after,
 .can-item .card-mob,
 .cans-slider,
@@ -870,7 +873,7 @@ body {
     height: 7.5vw;
   }
   .top-header.side-menu {
-    background: 0 0;
+    background: 0 0;    
   }
   .top-header.side-menu .menu-top {
     background: 0 0;
@@ -3307,6 +3310,9 @@ body {
   font-size: 1.65vw;
   line-height: 1.3;
 }
+.eff-text.work-helper .text-center p {
+  font-size: 1.5vw;
+}
 .eff-text .text-center p a {
   color: #000;
 }
@@ -3865,6 +3871,11 @@ body {
   min-height: 11.75vw;
   padding: 1.08vw 1.38542vw 1.2667vw 1.42708vw;
 }
+.present-section .present-text a {
+  text-decoration: none;
+  color: white;
+}
+
 .cards {
   height: 61.45833vw;
 }
@@ -4018,9 +4029,9 @@ body {
 .scroll-section .anim-words {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 1%;
   width: 100%;
-  height: 95%;
+  height: 98%;
   pointer-events: none;
   z-index: 0;
   margin-top: -2.60417vw;
@@ -4036,8 +4047,8 @@ body {
   justify-content: space-between;
 }
 .scroll-section .anim-words.evenings {
-  height: 89%;
-  top: 4%;
+  height: 92%;
+  top: 5%;
 }
 .scroll-section .anim-words .one {
   -webkit-animation: 26s linear infinite go-left;
@@ -4057,15 +4068,39 @@ body {
   overflow: visible;
 }
 .scroll-section .scroll-container .swiper-wrapper .swiper-slide {
-  width: 41.5625vw;
+  width: 37.5625vw;
   margin: 0 4.16667vw 3.125vw 0;
 }
 .scroll-section .desktop-version .scroll-container .top-line {
-  margin-bottom: 17px;
+  margin-bottom: 100px;
 }
 .scroll-section .desktop-version .scroll-container .bottom-line.swiper-container {
-  margin-left: 6.51042vw;
   overflow: visible;
+}
+.scroll-section .desktop-version .scroll-container .bottom-line.swiper-container .swiper-wrapper {
+  justify-content: center;
+}
+.scroll-section .desktop-version .scroll-container .top-line.swiper-container .swiper-wrapper,
+.scroll-section .desktop-version .scroll-container .bottom-line.swiper-container .swiper-wrapper {
+  margin-left: -80px;
+  gap: 80px;
+}
+.scroll-section .desktop-version .scroll-container .bottom-line.swiper-container .swiper-wrapper {
+  margin-left: 0;
+}
+.scroll-section
+  .desktop-version
+  .scroll-container
+  .bottom-line.swiper-container
+  .swiper-wrapper
+  .swiper-slide,
+.scroll-section
+  .desktop-version
+  .scroll-container
+  .top-line.swiper-container
+  .swiper-wrapper
+  .swiper-slide {
+  margin: 0;
 }
 .side-line,
 .tab .tags-flex {
@@ -4981,6 +5016,17 @@ body {
   background: #707070;
 }
 @media (min-width: 1280px) and (max-width: 1880px) {
+  .scroll-section .anim-words.evenings {
+    height: 97%;
+    top: 3%;
+  }
+  .scroll-section .desktop-version .scroll-container .top-line {
+    margin-bottom: 70px;
+  }
+  .scroll-section .desktop-version .scroll-container .top-line.swiper-container .swiper-wrapper,
+  .scroll-section .desktop-version .scroll-container .top-line.swiper-container .swiper-wrapper {
+    ml
+  }
   .look-section .look-flex .text-block .procent.evenings {
     font-size: 6.5625vw;
     text-align: center;
@@ -5403,6 +5449,7 @@ body {
     height: 270px;
   }
   .eff-text .text-center p,
+  .eff-text.work-helper .text-center p,
   .eff-text .text-justify p,
   .section-form .left-order .wt-title {
     font-size: 23px;
@@ -5698,6 +5745,9 @@ body {
     height: 485px;
     padding-top: 139px;
     padding-bottom: 190px;
+  }
+  .eff-text.work-helper .text-center {
+    max-width: 875px;
   }
   .eff-text .line-gradi {
     width: 33px;
@@ -6005,9 +6055,6 @@ body {
   .scroll-section .scroll-container .swiper-wrapper .swiper-slide {
     width: 532px;
     margin: 0 53px 40px 0;
-  }
-  .scroll-section .scroll-container .bottom-line.swiper-container {
-    margin-left: 125px;
   }
   .masters-section {
     padding-top: 60px;
@@ -6573,6 +6620,21 @@ body {
   }
 }
 @media (max-width: 1280px) {
+  .scroll-section .desktop-version .scroll-container .top-line {
+    margin-bottom: 45px;
+  }
+  .scroll-section .desktop-version .scroll-container .top-line.swiper-container .swiper-wrapper,
+  .scroll-section .desktop-version .scroll-container .bottom-line.swiper-container .swiper-wrapper {
+    margin-left: -40px;
+    gap: 40px;
+  }
+  .scroll-section .desktop-version .scroll-container .bottom-line.swiper-container .swiper-wrapper {
+    margin-left: 0;
+  }
+  .scroll-section .anim-words.evenings {
+    height: 93%;
+    top: 4%;
+  }
   .open-screen .title-work .title-item.evenings {
     font-size: 1.4vw;
   }
@@ -6818,10 +6880,6 @@ body {
   .look-section .look-flex .look-img.evenings img {
     top: 35%;
     height: auto;
-  }
-  .footer-next .next-title {
-    font-size: 14vw;
-    margin-bottom: -35px;
   }
   .footer-next .next-title span {
     font-size: 23vw;
@@ -7373,8 +7431,11 @@ body {
     justify-content: space-evenly;
   }
   .cases-mob .foto-cards .foto-card {
+    position: relative;
+    width: 89.46vw;
     min-width: 78.96875vw;
-    height: 39.59375vw;
+    height: 44.59375vw;
+    margin-bottom: 2.84375vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7404,12 +7465,18 @@ body {
     padding-bottom: 3.28125vw;
   }
   .cases-mob .foto-cards .foto-card .foto-text {
-    max-width: 61.25vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 79.25vw;
   }
   .cases-mob .foto-cards .foto-card .foto-text .fot-name {
+    
     font-size: 18px;
     font-family: "Random Grotesque Spacious Black";
     padding-bottom: 1.09375vw;
+    text-align: center;
   }
   .cases-mob .foto-cards .foto-card .foto-text .fot-text {
     font-size: 1.96875vw;
@@ -8053,6 +8120,7 @@ body {
     height: 39.375vw;
   }
   .eff-text .text-center p,
+  .eff-text.work-helper .text-center p,
   .eff-text .text-justify p {
     text-align: center;
     font-size: 2.8vw;
@@ -8626,6 +8694,8 @@ body {
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
+    top: 3%;
+    height: 93%;
   }
   .scroll-section .anim-words .one {
     -webkit-animation: 15s linear infinite go-left;
@@ -8643,25 +8713,25 @@ body {
     width: 97.8125vw;
     margin: 0 4.375vw 6.5625vw 0;
   }
-  .scroll-section .scroll-container .top-line .swiper-wrapper {
-    margin-left: 87px;
+  .scroll-section .scroll-container .swiper-container .swiper-wrapper .swiper-slide {
+    margin: 0;
   }
-  .scroll-section .scroll-container .middle-line .swiper-wrapper {
-    margin-left: -52px;
-  }
+  .scroll-section .scroll-container .top-line .swiper-wrapper,
+  .scroll-section .scroll-container .middle-line .swiper-wrapper,
   .scroll-section .scroll-container .bottom-line .swiper-wrapper {
-    margin-left: 78px;
+    gap: 5px;
+    justify-content: flex-start;
   }
-  .scroll-section .mobile-version .scroll-container .bottom-line.swiper-container {
-    margin-left: -13.40625vw;
-    overflow: visible;
+  .scroll-section .scroll-container .top-line,
+  .scroll-section .scroll-container .middle-line {
+    margin-bottom: 30px;
   }
+  .scroll-section .scroll-container .bottom-line {
+    margin-bottom: 70px;
+  }
+  .scroll-section .mobile-version .scroll-container .bottom-line.swiper-container,
+  .scroll-section .mobile-version .scroll-container .middle-line.swiper-container,
   .scroll-section .mobile-version .scroll-container .top-line.swiper-container {
-    margin-left: -14.40625vw;
-    overflow: visible;
-  }
-  .scroll-section .mobile-version .scroll-container .middle-line.swiper-container {
-    margin-left: 13vw;
     overflow: visible;
   }
   .masters-section {
@@ -9144,17 +9214,14 @@ body {
     width: 70%;
   }
 }
+@media (max-width: 480px) {
+  .footer-next .next-title {
+    font-size: 14vw;
+    margin-bottom: -35px;
+  }
+}
 @media (max-width: 390px) {
   .footer-next .next-title {
     margin-bottom: -18px;
-  }
-  .scroll-section .mobile-version .scroll-container .top-line.swiper-container {
-    margin-left: -20.40625vw;
-  }
-  .scroll-section .mobile-version .scroll-container .middle-line.swiper-container {
-    margin-left: 16vw;
-  }
-  .scroll-section .mobile-version .scroll-container .bottom-line.swiper-container {
-    margin-left: -19.40625vw;
   }
 }
