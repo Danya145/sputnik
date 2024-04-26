@@ -361,6 +361,7 @@ body {
 .footer-black.mobile,
 .header-works .works-back-mob,
 .info-text .info-border .text-bord-mob,
+.info-text .info-border .info-board-mob,
 .look-section .logo-look.only-mob,
 .look-section .look-fon.mob,
 .masters-section .logo-mob,
@@ -3446,6 +3447,11 @@ body {
   top: 14.58333vw;
   left: 48%;
 }
+.mobi-section .img-bottom .phone,
+.mobi-section .img-top .phone{
+  width: 78%;
+  margin: 0 0 15px 11%;
+}
 .mobi-section .left-gradi {
   background: -o-linear-gradient(309deg, #f22d7a 0, #932bbc 100%);
   background: linear-gradient(141deg, #f22d7a 0, #932bbc 100%);
@@ -3959,7 +3965,8 @@ body {
   }
 }
 .info-text {
-  padding: 16.14583vw 2.8125vw 15.10417vw;
+  /*height: 1100px;
+  padding: 16.14583vw 2.8125vw 15.10417vw; */
   margin-top: -2.08333vw;
   margin-bottom: 2.60417vw;
 }
@@ -3989,10 +3996,13 @@ body {
 }
 .info-text .info-border {
   width: 94.79167vw;
-  height: 26.92708vw;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+}
+.info-text .info-border .info-board {
+  margin-top: 1%;
+  width: 100%;
 }
 .info-text .info-border .text-bord,
 .info-text .info-border .text-bord-mob {
@@ -6026,13 +6036,13 @@ body {
     width: 100%;
   }
   .info-text {
-    padding: 186px 36px 193px;
+    /* padding: 186px 36px 193px; */
     margin-top: -26px;
     margin-bottom: 33px;
   }
   .info-text .info-border {
     width: 1213px;
-    height: 344.66px;
+    height: fit-content
   }
   .info-text .info-border .raket-img {
     width: 328.6px;
@@ -6853,6 +6863,10 @@ body {
   }
 }
 @media (max-width: 520px) {
+  .mobi-section .img-top .phone,
+  .mobi-section .img-bottom .phone {
+    margin: 0 0 30px;
+  }
   .scroll-section .anim-words.evenings {
     top: 3%;
   }
@@ -6987,6 +7001,7 @@ body {
   .footer-works.desktop,
   .header-works .works-back,
   .info-text .info-border .text-bord,
+  .info-text .info-border .info-board,
   .look-section .look-flex .text-block.no-bord:before,
   .look-section .look-fon.desk,
   .our-team .img-raket,
@@ -7212,6 +7227,7 @@ body {
   .footer-black.mobile,
   .footer-works.mobile,
   .info-text .info-border .text-bord-mob,
+  .info-text .info-border .info-board-mob,
   .look-section .logo-look.only-mob,
   .look-section .look-flex .text-block .look-text span,
   .look-section .look-fon.mob,
@@ -8188,12 +8204,16 @@ body {
   .mobi-section .img-top {
     position: static;
     width: 82.03125vw;
-    height: 135.625vw;
+    height: 140.625vw;
     margin-left: auto;
     padding-right: 2.1875vw;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+  }
+  .mobi-section .img-bottom img,
+  .mobi-section .img-top img{
+    width: 100%;
   }
   .mobi-section .img-bottom.swiper-slide-next,
   .mobi-section .img-top.swiper-slide-next {
@@ -8666,7 +8686,8 @@ body {
     z-index: 3;
   }
   .info-text {
-    padding: 10.28125vw 4.8125vw 5.25vw;
+    margin-bottom: 10vw;
+    padding: 10.28125vw 4.8125vw;
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -8679,7 +8700,11 @@ body {
   }
   .info-text .info-border {
     width: 100%;
-    height: 159.25vw;
+    /* height: 159.25vw; */
+    height: fit-content;
+  }
+  .info-text .info-border img{
+    width: 100%;
   }
   .info-text .info-border .raket-img {
     width: 82.03125vw;
