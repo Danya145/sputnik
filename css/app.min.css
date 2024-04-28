@@ -377,7 +377,8 @@ body {
 .present-section .img-block img.evenings-mob-img1,
 .scroll-section .mobile-version,
 .works-items:not(.works-items-show),
-.works-slider .swiper-slide .work-item:after {
+.works-slider .swiper-slide .work-item:after,
+.colorful-blocks .mob {
   display: none;
 }
 .violet-button {
@@ -627,13 +628,15 @@ body {
   .menu-top .link-desk,
   .menu-top:not(.scrolled-fix).viol-menu .mob-white,
   .top-header.side-menu .menu-top .logo-min .mob-white,
-  .direct-slider .swiper-slide.empty-slide {
+  .direct-slider .swiper-slide.empty-slide,
+  .colorful-blocks .desk {
     display: none;
   }
   .menu-links,
   .menu-top,
   .menu-top:not(.scrolled-fix).viol-menu .mob-black,
-  .title-top h1 span {
+  .title-top h1 span,
+  .colorful-blocks .mob {
     display: block;
   }
   .hamburger-menu {
@@ -3813,6 +3816,7 @@ body {
   display: block;
   width: 100%;
   text-align: center;
+  white-space: nowrap;
 }
 .present-section {
   padding-top: 2.08333vw;
@@ -4023,6 +4027,21 @@ body {
 .scroll-section .anim-words .two.evenings {
   height: 14%;
 }
+.info-board-evenings {
+  display: flex;
+  justify-content: space-between;
+}
+.info-board-evenings div {
+  width: 50vw;
+}
+.info-board-evenings .pink-block {
+  display: flex;
+  justify-content: center;
+}
+.info-board-evenings .colorful-blocks {
+  display: flex;
+  align-items: center;
+}
 .info-text .info-border .raket-img {
   width: 25.67708vw;
   position: absolute;
@@ -4087,8 +4106,6 @@ body {
 }
 .scroll-section .desktop-version .scroll-container .bottom-line.swiper-container .swiper-wrapper {
   justify-content: center;
-}
-.scroll-section .desktop-version .scroll-container .bottom-line.swiper-container .swiper-wrapper {
   margin-left: 0;
 }
 .scroll-section
@@ -5019,6 +5036,10 @@ body {
   background: #707070;
 }
 @media (min-width: 1280px) and (max-width: 1880px) {
+  .footer-next .next-title {
+    font-size: 105px;
+    margin-bottom: -37px;
+  }
   .scroll-section .anim-words.evenings {
     height: 97%;
     top: 3%;
@@ -6420,6 +6441,10 @@ body {
   }
 }
 @media (min-width: 1880px) {
+  .info-board-evenings .colorful-blocks,
+  .info-board-evenings .colorful-blocks .desk {
+    width: fit-content;
+  }
   .footer-next .next-title {
     font-size: 157px;
   }
@@ -6851,6 +6876,17 @@ body {
   }
 }
 @media (max-width: 520px) {
+  .info-board-evenings {
+    flex-direction: column;
+  }
+  .info-board-evenings div {
+    width: 100vw;
+  }
+  .footer-next .next-title {
+    font-size: 14vw;
+    margin-bottom: -35px;
+    white-space: normal;
+  }
   .scroll-section .anim-words .one.evenings,
   .scroll-section .anim-words .two.evenings {
     height: 5%;
@@ -7119,8 +7155,12 @@ body {
     align-items: center;
     gap: 17px;
   }
-  .info-us .info-item .socials img {
+  .info-us .info-item .socials img,
+  .info-us .info-item .socials a {
     width: 50%;
+  }
+  .info-us .info-item .socials a img {
+    width: 100%;
   }
   .info-us .info-item #socials {
     position: static;
@@ -7931,7 +7971,9 @@ body {
     width: 35.25vw;
     text-align: left;
   }
-  .descript-section .text-container .text-block .inner-content .p p,
+  .descript-section .text-container .text-block .inner-content .p p {
+    font-size: 3.3vw;
+  }
   .our-team .pers-tab.active-tab .person-cont .restp-tit {
     font-size: 3.0625vw;
   }
@@ -8210,13 +8252,13 @@ body {
   .mobi-section .img-top.swiper-slide-next {
     -webkit-transform: scale(0.7) translateX(-47%);
     -ms-transform: scale(0.7) translateX(-47%);
-    transform: scale(0.7) translateX(-47%);
+    transform: scale(0.7) translateX(-47%) !important;
   }
   .mobi-section .img-bottom.swiper-slide-prev,
   .mobi-section .img-top.swiper-slide-prev {
     -webkit-transform: scale(0.7) translateX(47%);
     -ms-transform: scale(0.7) translateX(47%);
-    transform: scale(0.7) translateX(47%);
+    transform: scale(0.7) translateX(47%) !important;
   }
   .mobi-section .mobi-text {
     position: static;
@@ -8361,7 +8403,7 @@ body {
     padding-bottom: 4.375vw;
   }
   .descript-section .text-container .text-block .inner-content .p big {
-    font-size: 3.28125vw;
+    font-size: 3.03vw;
   }
   .descript-section .text-container .text-block .inner-content .p:before {
     left: -3.9375vw;
@@ -9220,12 +9262,6 @@ body {
   }
   .pink-screen .about-bottom .three-grid .three-grid-text {
     width: 70%;
-  }
-}
-@media (max-width: 480px) {
-  .footer-next .next-title {
-    font-size: 14vw;
-    margin-bottom: -35px;
   }
 }
 @media (max-width: 390px) {
