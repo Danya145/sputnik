@@ -1819,7 +1819,7 @@ body {
 }
 .can-item.card-two .card-img {
   width: 13.125vw;
-  bottom: -5.98958vw;
+  bottom: -3.98958vw;
   left: 20%;
 }
 .can-item.card-three {
@@ -4031,6 +4031,10 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.info-board-evenings.shanti {
+  height: 47vw;
+  margin: 120px 0;
+}
 .info-board-evenings div {
   width: 50vw;
 }
@@ -4041,6 +4045,9 @@ body {
 .info-board-evenings .colorful-blocks {
   display: flex;
   align-items: center;
+}
+.info-board-evenings.shanti .colorful-blocks .desk img {
+  border-radius: 35px 0 0 35px;
 }
 .info-text .info-border .raket-img {
   width: 25.67708vw;
@@ -5036,13 +5043,16 @@ body {
   background: #707070;
 }
 @media (min-width: 1280px) and (max-width: 1880px) {
+  .info-board-evenings.shanti {
+    margin: 85px 0;
+  }
   .footer-next .next-title {
     font-size: 105px;
     margin-bottom: -37px;
   }
   .scroll-section .anim-words.evenings {
-    height: 97%;
-    top: 3%;
+    height: 94%;
+    top: 4%;
   }
   .scroll-section .desktop-version .scroll-container .top-line {
     margin-bottom: 70px;
@@ -5321,7 +5331,7 @@ body {
   }
   .can-item.card-two .card-img {
     width: 168px;
-    bottom: -76.67px;
+    bottom: -51.67px;
     left: 20%;
   }
   .can-item.card-three .card-img {
@@ -5843,7 +5853,7 @@ body {
   .mobi-section .img-bottom {
     width: 291px;
     height: 501px;
-    top: 186.67px;
+    top: 212.67px;
     left: 48%;
   }
   .mobi-section .left-gradi {
@@ -6648,6 +6658,9 @@ body {
   }
 }
 @media (max-width: 1280px) {
+  .info-board-evenings.shanti {
+    margin: 65px 0;
+  }
   .scroll-section .desktop-version .scroll-container .top-line {
     margin-bottom: 45px;
   }
@@ -6878,6 +6891,12 @@ body {
 @media (max-width: 520px) {
   .info-board-evenings {
     flex-direction: column;
+  }
+  .info-board-evenings.shanti {
+    height: auto;
+  }
+  .info-board-evenings.shanti .pink-block {
+    margin-bottom: 20px;
   }
   .info-board-evenings div {
     width: 100vw;
@@ -7356,7 +7375,7 @@ body {
   }
   .can-item.card-two .card-img {
     width: 41.5625vw;
-    bottom: -19.6875vw;
+    bottom: -13.6875vw;
   }
   #form-footer .form-block > div .errorTextForm,
   .can-item.card-three .card-four li:before {
@@ -8256,9 +8275,9 @@ body {
   }
   .mobi-section .img-bottom.swiper-slide-prev,
   .mobi-section .img-top.swiper-slide-prev {
-    -webkit-transform: scale(0.7) translateX(47%);
-    -ms-transform: scale(0.7) translateX(47%);
-    transform: scale(0.7) translateX(47%) !important;
+    -webkit-transform: scale(0.7) translateX(43%);
+    -ms-transform: scale(0.7) translateX(43%);
+    transform: scale(0.7) translateX(43%) !important;
   }
   .mobi-section .mobi-text {
     position: static;
