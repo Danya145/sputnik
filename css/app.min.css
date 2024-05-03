@@ -3884,6 +3884,9 @@ body {
   min-height: 11.75vw;
   padding: 1.08vw 1.38542vw 1.2667vw 1.42708vw;
 }
+.present-section.shanti .present-text p {
+  font-family: "Inter";
+}
 .present-section .present-text a {
   text-decoration: none;
   color: white;
@@ -5449,6 +5452,7 @@ body {
   .descript-section .text-container .text-block .inner-content .p p {
     font-size: 16px;
   }
+  .descript-section.shanti .text-container .text-block .inner-content .p p{font-size: 19px;}
   .cases-slider .case-slide .case-title {
     padding-top: 10px;
     font-size: 21.33px;
@@ -8702,6 +8706,9 @@ body {
     -webkit-box-shadow: 0 1.09375vw 6.5625vw rgba(0, 0, 0, 0.4);
     box-shadow: 0 1.09375vw 6.5625vw rgba(0, 0, 0, 0.4);
     min-height: 43.75vw;
+  }
+  .present-section.shanti .present-text {
+    font-size: 3.3vw;
   }
   .present-section .present-evening-text {
     max-width: none;
