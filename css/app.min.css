@@ -8407,6 +8407,10 @@ body {
     transform: rotate(-90deg);
     margin-bottom: -100%;
   }
+  .descript-section.eng .title-ribbon.left .title-text span,
+  .descript-section.eng .title-ribbon.right .title-text span {
+    margin-bottom: -600%;
+  }
   .descript-section .title-ribbon.right {
     right: 0;
     border-radius: 100px 0 0 100px;
