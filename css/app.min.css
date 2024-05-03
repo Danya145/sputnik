@@ -5063,21 +5063,13 @@ body {
   background: #707070;
 }
 @media (min-width: 1280px) and (max-width: 1880px) {
-  .info-board-evenings.shanti {
-    margin: 85px 0;
-  }
-  .scroll-section.eng .anim-words .one,
-  .scroll-section.eng .anim-words .two {
-    max-height: 105px;
-    height: 6vw;
-  }
   .footer-next .next-title {
     font-size: 105px;
     margin-bottom: -37px;
   }
   .scroll-section .anim-words.evenings {
-    height: 97%;
-    top: 3%;
+    height: 94%;
+    top: 4%;
   }
   .scroll-section .desktop-version .scroll-container .top-line {
     margin-bottom: 70px;
