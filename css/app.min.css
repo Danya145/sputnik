@@ -381,6 +381,10 @@ body {
 .colorful-blocks .mob {
   display: none;
 }
+.title-h.white-h{
+  opacity: 1;
+transform: translateY(0);
+}
 .violet-button {
   padding: 0.9375vw 1.30208vw 0.88542vw;
   font-size: 1.25vw;
