@@ -1963,6 +1963,10 @@ body {
   height: 5.72917vw;
   margin-top: 0.52083vw;
 }
+.cases-section.eng .back-words .sol,
+.cases-section.eng .back-words .spt {
+  background: url(../img/portfolio-eng1.svg) center center/auto 128% repeat-x;
+}
 .cases-section .content {
   padding-left: 1.30208vw;
   padding-right: 1.30208vw;
@@ -2545,6 +2549,10 @@ body {
   background-size: auto 100%;
   margin-top: -1.5625vw;
 }
+.start-section.eng .back-words .sol,
+.start-section.eng .back-words .spt {
+  background-image: url(../img/history-img-eng.svg);
+}
 @-webkit-keyframes waves {
   0% {
     -webkit-transform: translateX(0);
@@ -2954,9 +2962,31 @@ body {
 .part-screen .back-words.part4 .spt {
   background-image: url(../img/data-img.svg);
 }
-.part-screen .back-words.part5 .sol,
-.part-screen .back-words.part5 .spt {
-  background-image: url(../img/target-img.svg);
+.part-screen .back-words.part6 .sol,
+.part-screen .back-words.part6 .spt {
+  background-image: url(../img/design-img.svg);
+}
+.part-screen.eng .back-words.part1 .sol,
+.part-screen.eng .back-words.part1 .spt {
+  background-image: url(../img/works-img-bg-eng.svg);
+  margin-top: -1.875vw;
+  height: 6.77083vw;
+}
+.part-screen.eng .back-words.part2 .sol,
+.part-screen.eng .back-words.part2 .spt {
+  background-image: url(../img/bots-img-eng.svg);
+}
+.part-screen.eng .back-words.part3 .sol,
+.part-screen.eng .back-words.part3 .spt {
+  background-image: url(../img/mob-img-eng.svg);
+}
+.part-screen.eng .back-words.part4 .sol,
+.part-screen.eng .back-words.part4 .spt {
+  background-image: url(../img/data-img-eng.svg);
+}
+.part-screen.eng .back-words.part6 .sol,
+.part-screen.eng .back-words.part6 .spt {
+  background-image: url(../img/design-img-eng.svg);
 }
 .part-content {
   display: flex;
@@ -3057,7 +3087,7 @@ body {
   -webkit-filter: blur(2.5px);
   filter: blur(2.5px);
 }
-.works-slider .swiper-slide .default {
+.works-slider.eng .swiper-slide .default {
   background: url(../img/work-def-eng.svg) center center/cover no-repeat;
 }
 .work-item,
@@ -3821,6 +3851,9 @@ body {
   text-align: center;
   white-space: nowrap;
 }
+.footer-next.eng .next-title {
+  font-size: 11vw;
+}
 .present-section {
   padding-top: 2.08333vw;
   padding-bottom: 3.64583vw;
@@ -4322,7 +4355,7 @@ body {
   transition: 0.3s;
 }
 .side-line.eng .text-line {
-  background: url(../img/side-text-eng.svg) center center/auto 22.60417vw repeat-y;
+  background: url(../img/side-text-eng.svg) center center/auto 38.60417vw repeat-y;
 }
 .side-line.left {
   left: 0;
@@ -4367,13 +4400,13 @@ body {
 .header-works .back-words .sol,
 .header-works .back-words .spt {
   height: 7.29167vw;
-  background-image: url(../img/works-img.png);
+  background-image: url(../img/works-img-rus.svg);
   background-size: 100vw auto;
   margin-top: 0.3125vw;
 }
 .header-works.eng .back-words .sol,
 .header-works.eng .back-words .spt {
-  background-image: url(../img/works-img-eng.png);
+  background-image: url(../img/works-img-eng.svg);
 }
 .header-works .back-words .sol {
   -webkit-animation: 22s linear infinite go-left;
@@ -4625,7 +4658,7 @@ body {
   background-color: #f5ebff;
 }
 .works-items .work-item.default {
-  background-image: url(../img/work-def.png);
+  background-image: url(../img/work-def.svg);
   background-size: cover;
   border-radius: 3.38542vw;
   -webkit-filter: blur(2px);
@@ -5070,9 +5103,16 @@ body {
   background: #707070;
 }
 @media (min-width: 1280px) and (max-width: 1880px) {
+  .side-line.eng .text-line {
+    background-size: 6vw;
+}
   .footer-next .next-title {
     font-size: 105px;
     margin-bottom: -37px;
+  }
+  .footer-next.eng .next-title {
+    font-size: 156px;
+    margin-bottom: -76px;
   }
   .scroll-section .anim-words.evenings {
     height: 94%;
@@ -5452,7 +5492,9 @@ body {
   .descript-section .text-container .text-block .inner-content .p p {
     font-size: 16px;
   }
-  .descript-section.shanti .text-container .text-block .inner-content .p p{font-size: 19px;}
+  .descript-section.shanti .text-container .text-block .inner-content .p p {
+    font-size: 19px;
+  }
   .cases-slider .case-slide .case-title {
     padding-top: 10px;
     font-size: 21.33px;
@@ -6490,6 +6532,9 @@ body {
   .footer-next .next-title {
     font-size: 157px;
   }
+  .footer-next.eng .next-title {
+    font-size: 200px;
+  }
   .pink-screen {
     background: #f32d7a;
     padding-bottom: 0.52083vw;
@@ -6928,6 +6973,12 @@ body {
   }
 }
 @media (max-width: 520px) {
+  .side-line.eng .text-line {
+      background-size: 9vw;
+  }
+  .side-line.conts.eng .text-line {
+    background-size: 14vw;
+  }
   .info-board-evenings {
     flex-direction: column;
   }
@@ -7153,6 +7204,10 @@ body {
     position: absolute;
     z-index: 0;
     top: 90vw;
+  }
+  .first-main .prop-items .swiper-mob.eng {
+    transform-origin: 50% 52%;
+    top: 85vw;
   }
   .first-main .prop-items .swiper-container .swiper-wrapper {
     -webkit-box-align: center;
@@ -7480,6 +7535,12 @@ body {
     bottom: -28%;
     width: 41%;
   }
+  .can-item.card-six .card-img5 {
+    right: 130%;
+    left: -34%;
+    bottom: 56%;
+    width: 39%;
+  }
   .cans-slider {
     padding-bottom: 15.3125vw;
     width: 100%;
@@ -7515,6 +7576,7 @@ body {
     max-width: 390px;
     font-size: 2.7vw;
     line-height: 1.4;
+    color: white;
   }
   .cases-section {
     padding-bottom: 6.5625vw;
@@ -7920,6 +7982,7 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
   }
+  .descript-section .title-ribbon .title-text{height: 108%;}
   .our-team .persons .card-next {
     right: auto;
     left: 0;
@@ -8123,6 +8186,10 @@ body {
     -webkit-box-shadow: 0 1.09375vw 2.1875vw 0 rgba(0, 0, 0, 0.5);
     box-shadow: 0 1.09375vw 2.1875vw 0 rgba(0, 0, 0, 0.5);
     padding-top: 0.21875vw;
+  }
+  .part-content .left-cont .btn-part.eng {
+    white-space: nowrap;
+    font-size: 2.3875vw;
   }
   .part-content .left-cont .raket-viol {
     position: absolute;
@@ -8424,6 +8491,10 @@ body {
   .descript-section.eng .title-ribbon.left .title-text span,
   .descript-section.eng .title-ribbon.right .title-text span {
     margin-bottom: -600%;
+  }
+  .descript-section.eng1 .title-ribbon.left .title-text span,
+  .descript-section.eng1 .title-ribbon.right .title-text span {
+    margin-bottom: -400%;
   }
   .descript-section .title-ribbon.right {
     right: 0;
@@ -9346,7 +9417,14 @@ body {
   }
 }
 @media (max-width: 390px) {
+  .pink-screen .about-top .descript {
+    font-size: 15px;
+  }
   .footer-next .next-title {
     margin-bottom: -18px;
   }
+  .stadi-slider .stadi-item .stadi-desc.eng {
+    font-size: 0.63em;
+  }
+  .section-form .left-order .form-title {bottom: 0.6vw;}
 }
