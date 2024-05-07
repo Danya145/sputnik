@@ -9450,15 +9450,24 @@ body {
     width: 70%;
   }
 }
+@media (max-width: 400px) {
+  .stadi-slider .stadi-item .stadi-desc.eng {
+    font-size: 12px;
+  }
+  .can-cards.eng h3 {
+    font-size: 26px;
+  }
+
+}
 @media (max-width: 390px) {
+  .can-item ul {
+    font-size: 10px;
+  }
   .pink-screen .about-top .descript {
     font-size: 15px;
   }
   .footer-next .next-title {
     margin-bottom: -18px;
-  }
-  .stadi-slider .stadi-item .stadi-desc.eng {
-    font-size: 0.63em;
   }
   .section-form .left-order .form-title {
     bottom: 0.6vw;
