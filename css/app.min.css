@@ -381,9 +381,9 @@ body {
 .colorful-blocks .mob {
   display: none;
 }
-.title-h.white-h{
+.title-h.white-h {
   opacity: 1;
-transform: translateY(0);
+  transform: translateY(0);
 }
 .violet-button {
   padding: 0.9375vw 1.30208vw 0.88542vw;
@@ -2126,6 +2126,7 @@ transform: translateY(0);
   padding: 5.46875vw;
 }
 .cases-mob .case-card .case-text h4 {
+  font-family: "Random Grotesque Spacious Black";
   color: #fff;
   font-size: 4.375vw;
   padding-bottom: 0.875vw;
@@ -2379,6 +2380,10 @@ transform: translateY(0);
   font-size: 26px;
   font-family: "Random Grotesque Spacious Book";
   width: 480px;
+}
+.pink-screen .about-top .eng {
+  font-size: 23px;
+  width: 560px;
 }
 .pink-screen .about-top-right {
   width: 465.3px;
@@ -2973,23 +2978,26 @@ transform: translateY(0);
 .part-screen.eng .back-words.part1 .sol,
 .part-screen.eng .back-words.part1 .spt {
   background-image: url(../img/works-img-bg-eng.svg);
-  margin-top: -1.875vw;
-  height: 6.77083vw;
+  margin-top: 0;
 }
 .part-screen.eng .back-words.part2 .sol,
 .part-screen.eng .back-words.part2 .spt {
+  margin-top: 0;
   background-image: url(../img/bots-img-eng.svg);
 }
 .part-screen.eng .back-words.part3 .sol,
 .part-screen.eng .back-words.part3 .spt {
+  margin-top: 0;
   background-image: url(../img/mob-img-eng.svg);
 }
 .part-screen.eng .back-words.part4 .sol,
 .part-screen.eng .back-words.part4 .spt {
+  margin-top: 0;
   background-image: url(../img/data-img-eng.svg);
 }
 .part-screen.eng .back-words.part6 .sol,
 .part-screen.eng .back-words.part6 .spt {
+  margin-top: 0;
   background-image: url(../img/design-img-eng.svg);
 }
 .part-content {
@@ -5109,7 +5117,7 @@ transform: translateY(0);
 @media (min-width: 1280px) and (max-width: 1880px) {
   .side-line.eng .text-line {
     background-size: 6vw;
-}
+  }
   .footer-next .next-title {
     font-size: 105px;
     margin-bottom: -37px;
@@ -6978,7 +6986,7 @@ transform: translateY(0);
 }
 @media (max-width: 520px) {
   .side-line.eng .text-line {
-      background-size: 9vw;
+    background-size: 9vw;
   }
   .side-line.conts.eng .text-line {
     background-size: 14vw;
@@ -7529,7 +7537,7 @@ transform: translateY(0);
   }
   .can-item.card-six .card-img {
     width: 41.5625vw;
-    bottom: -13.125vw;
+    bottom: -20.125vw;
     right: auto;
     left: 30%;
   }
@@ -7581,6 +7589,9 @@ transform: translateY(0);
     font-size: 2.7vw;
     line-height: 1.4;
     color: white;
+  }
+  .cases-mob .case-card .case-text p {
+    font-size: 2.4vw;
   }
   .cases-section {
     padding-bottom: 6.5625vw;
@@ -7780,7 +7791,7 @@ transform: translateY(0);
   .pink-screen .about-top .descript {
     font-size: 3.9375vw;
     width: 100%;
-    max-width: 70vw;
+    max-width: 90vw;
   }
   .pink-screen .wt-textblock {
     padding: 7vw 1.96875vw 3.28125vw 4.59375vw;
@@ -7986,7 +7997,9 @@ transform: translateY(0);
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .descript-section .title-ribbon .title-text{height: 108%;}
+  .descript-section .title-ribbon .title-text {
+    height: 108%;
+  }
   .our-team .persons .card-next {
     right: auto;
     left: 0;
@@ -9430,5 +9443,7 @@ transform: translateY(0);
   .stadi-slider .stadi-item .stadi-desc.eng {
     font-size: 0.63em;
   }
-  .section-form .left-order .form-title {bottom: 0.6vw;}
+  .section-form .left-order .form-title {
+    bottom: 0.6vw;
+  }
 }
