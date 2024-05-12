@@ -375,7 +375,9 @@ body {
 .scroll-section .mobile-version,
 .works-items:not(.works-items-show),
 .works-slider .swiper-slide .work-item:after,
-.colorful-blocks .mob {
+.colorful-blocks .mob,
+.text-container .text-block.tablet,
+.present-section .evenings-img-block .evenings-desk-img1 {
   display: none;
 }
 .title-h.white-h {
@@ -1003,13 +1005,8 @@ body {
   .direct-slider
     .swiper-slide:not(.swiper-slide-active):not(.swiper-slide-next):not(.swiper-slide-prev)
     .direct-card {
-    background: #232323;
-    -webkit-transform: translateY(-7vw) skew(5deg) scale(0.7, 0.9) rotate(-2deg);
-    -ms-transform: translateY(-7vw) skew(5deg) scale(0.7, 0.9) rotate(-2deg);
-    transform: translateY(-7vw) skew(5deg) scale(0.7, 0.9) rotate(-2deg);
-    -webkit-box-shadow: -0.26042vw 0.05208vw 0 0 #000;
-    box-shadow: -0.26042vw 0.05208vw 0 0 #000;
-    cursor: pointer;
+      transform: scale(0.9, 0.9);
+      filter: grayscale(0.4);
   }
   .direct-slider
     .swiper-slide:not(.swiper-slide-active):not(.swiper-slide-next):not(.swiper-slide-prev)
@@ -1035,7 +1032,7 @@ body {
     .swiper-slide:not(.swiper-slide-active):not(.swiper-slide-next):not(.swiper-slide-prev)
     .direct-card
     .desc-card {
-    color: #757575;
+      transform: scale(0.9, 0.9);
   }
   .direct-slider .swiper-slide-active {
     margin-left: 0;
@@ -1059,11 +1056,7 @@ body {
     margin-left: -0.88542vw;
   }
   .direct-slider .swiper-slide-next ~ .swiper-slide .direct-card {
-    -webkit-transform: translateY(-7vw) skew(-5deg) scale(0.7, 0.9) rotate(2deg) !important;
-    -ms-transform: translateY(-7vw) skew(-5deg) scale(0.7, 0.9) rotate(2deg) !important;
-    transform: translateY(-7vw) skew(-5deg) scale(0.7, 0.9) rotate(2deg) !important;
-    -webkit-box-shadow: 0.26042vw 0.05208vw 0 0 #000 !important;
-    box-shadow: 0.26042vw 0.05208vw 0 0 #000 !important;
+    transform: scale(0.9, 0.9);
   }
   .direct-slider .swiper-slide-active .direct-card .round-white {
     background: url(../img/arr-wht.svg) center center/1.71875vw auto no-repeat #f32d7a;
@@ -6551,10 +6544,6 @@ body {
   }
 }
 @media (min-width: 1880px) {
-  /* .info-board-evenings .colorful-blocks,
-  .info-board-evenings .colorful-blocks .desk {
-    width: fit-content;
-  } */
   .info-board-evenings .colorful-blocks .desk img {
     width: 100%;
   }
@@ -6999,6 +6988,151 @@ body {
     max-width: 100%;
     padding-left: 2.65625vw;
     padding-right: 2.65625vw;
+  }
+}
+@media (min-width: 780px) and (max-width: 1280px) and (min-height: 700px) and (max-height: 800px) and (orientation:landscape){
+  .work-page .top-header .raket-menu,
+  .text-container .text-block:not(.tablet),
+  .present-section .evenings-img-block .evenings-desk-img1,
+  .mobi-section .img-bottom .shadow,
+  .mobi-section .img-top .shadow {
+    display: none;
+  }
+  .text-container .text-block.tablet{
+    display: block;
+  }
+  .work-page .top-header,.menu-top.scrolled-fix {
+    position: absolute;
+  }
+  .top-header.side-menu .menu-top .menu-links li:first-child {margin-left: 0;}
+  .menu-links, .mobi-menu{
+    opacity: 0;
+    transform: translateX(-120vw);
+    transition: 0.6s;
+  }
+  .menu-links.visible, .mobi-menu.visible{
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .menu-links.visible{
+    overflow: hidden;
+    padding: 11.0625vw 4.8125vw 34.0625vw;
+    width: 78vw !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(217, 44, 139, 1) !important;
+    border-radius: 0 !important;
+    width: 100vw;
+    min-height: 100vh;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .menu-links.visible li a{
+    font-size: 30px;  
+    line-height: 40px;
+    text-align: left;
+  }
+  .menu-links.visible li a img{
+    width: 100%;
+  }
+  .top-header.side-menu .menu-top .menu-links.visible .logo-min {
+    position: absolute;
+    right: -6%;
+    top: -5%;
+    width: 32%;
+    height: 28%;
+  }
+  .menu-line{
+    position: absolute;
+    height: 70vh;
+    width: 2.4vw;
+    background: rgba(217, 44, 139, 1);
+    border-radius: 0 0 100px ;
+    z-index: 10;
+  }
+  .descript-section .content .text-container .text-block .inner-content .author-sign {
+    width: fit-content;
+    margin: 5px 0 15px auto;
+    font-size: 14px;
+  }
+  .descript-section .text-container .text-block .inner-content .p p big{font-size: 14px;}
+  .title-ribbon.nobel.evenings {
+    position: absolute;
+    height: 100%;
+    width: 3%;
+    right: -13%;
+    top: -6%;
+    border-radius: 100px 0 0 100px;
+    background: linear-gradient(40deg, #f22d7a 0, #932bbc 100%);
+  }
+  .present-section{margin-left: 0;}
+  .present-section .present-evening-text p {
+    font-size: 12px;
+    font-family: "Random Grotesque Spacious Book";
+  }
+  .present-section .img-block img.pres-desk{
+    margin-left: 30px;
+  }
+  .mobi-section {
+    margin-bottom: 50px;
+  }
+  .mobi-section .mobi-container .img-bottom {
+    width: 36.78646vw;
+    height: 48.16667vw;
+    top: 0;
+    left: 57%;
+  }
+  .mobi-section .mobi-container .img-top {
+    width: 28.22917vw;  
+    top: -6%;
+    left: 20.5%;
+  }
+  .work-page .mobi-section .mobi-text {
+    left: 12%;
+    top: 77%;
+    font-size: 12px;
+    width: 45vw;
+  }
+  .open-screen.shanti {
+    background-size: 140% 100% !important;
+  }
+  .eff-text .text-center {
+    max-width: 85vw;
+  }
+  .eff-text .text-center p {
+    text-align: left;
+    font-size: 13px;
+  }
+  .present-section.shanti{
+    padding-top: 7vw;
+  }
+  .present-section .present-text{
+    font-size: 14px;
+    padding: 2.55208vw 2.38542vw 2.91667vw 2.42708vw;
+  }
+    .present-section.shanti .present-text{
+    top: 53%;
+    left: 20.70833vw;
+  }
+  .pb15-desk {
+    padding-bottom: 0 !important;
+  }
+  .work-images .pink-flat {
+    height: auto;
+    top: 37.45833vw;
+  }
+  .work-images .work-image-right {
+    top:9.59375vw;
+  }
+  .work-images{
+    margin-bottom: 20px;
+  }
+  .work-images .pink-flat span {
+    font-size: 12px;
   }
 }
 @media (max-width: 520px) {
