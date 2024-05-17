@@ -7014,7 +7014,8 @@ body {
   .can-item.card-six .fon-img,
   .can-item .can-header h4 br,
   .cases-slider .case-slide .case-link,
-  .cases-slider .case-slide .case-cover img:nth-child(1) {
+  .cases-slider .case-slide .case-cover img:nth-child(1),
+  .case-navigation {
     display: none;
   }
   .first-screen .top-header {
@@ -7360,6 +7361,9 @@ body {
     left: -50%;
     font-size: 1.5vw;
   }
+  .stadi-slider.eng .stadi-item .stadi-tit {
+    top: 40px;
+  }
   .stadi-slider .stadi-item .stadi-desc {
     font-size: 1.75vw;
   }
@@ -7469,16 +7473,25 @@ body {
     bottom: -4.08333vw;
     right: 27.04167vw;
   }
+  .cases-slider.swiper-container {
+    overflow: visible;
+  }
   .cases-slider.swiper-container .swiper-slide {
     width: 100%;
   }
   .cases-slider .case-slide {
     width: 67vw;
   }
-
   .cases-slider .case-slide .case-cover,
   .cases-slider .case-slide .case-text {
     width: 45vw;
+  }
+  .cases-slider .case-slide .case-title {
+    position: absolute;
+    top: -14%;
+    left: 0;
+    font-size: 2vw;
+    width: 150%;
   }
   .cases-slider .case-slide .case-cover img {
     height: 100%;
