@@ -620,7 +620,7 @@ body {
   margin-left: -0.52083vw;
   white-space: nowrap;
 }
-@media (max-width: 520px) {
+@media (max-width: 520px) or ((min-height: 780px) and (max-height: 1280px) and (min-width: 700px) and (max-width: 800px) and (orientation:portrait)) {
   .menu-links a,
   .menu-top:not(.scrolled-fix).viol-menu .translate-button span {
     color: #161616;
@@ -753,7 +753,7 @@ body {
     transition: 0.3s;
   }
   .menu-top.scrolled-fix {
-    background: #161616;
+    background: #161616 !important;
     height: 12.6875vw;
     width: 100%;
     left: 0;
@@ -7836,8 +7836,6 @@ body {
     left: -4.7%;
   }
 }
-@media ((min-height: 780px) and (max-height: 1280px) and (min-width: 700px) and (max-width: 800px) and (orientation:portrait)) {
-}
 @media (max-width: 520px) or ((min-height: 780px) and (max-height: 1280px) and (min-width: 700px) and (max-width: 800px) and (orientation:portrait)) {
   .side-line.eng .text-line {
     background-size: 9vw;
@@ -8854,21 +8852,23 @@ body {
   .descript-section .title-ribbon .title-text {
     height: 108%;
   }
-  .our-team .persons .card-next {
+  .our-team .card-next {
+    top: 85.5%;
     right: auto;
-    left: 0;
+    left: 4%;
     height: 21.875vw;
-    width: 100%;
+    width: 92%;
+    border-radius: 0 0 6.5625vw 6.5625vw;
     -webkit-box-shadow: inset 0 1.3125vw 4.375vw rgba(0, 0, 0, 0.4);
     box-shadow: inset 0 1.3125vw 4.375vw rgba(0, 0, 0, 0.4);
     background: url(../img/slider-right.svg) left center/30.625vw auto no-repeat #fff;
     padding-left: 33.90625vw;
     padding-top: 3.9375vw;
   }
-  .our-team .persons .card-next .tit {
+  .our-team .card-next .next-text .tit {
     font-size: 10.71875vw;
   }
-  .our-team .persons .card-next .txt {
+  .our-team .card-next .next-text .txt {
     font-size: 5.25vw;
     margin-top: -2.1875vw;
   }
@@ -9679,7 +9679,7 @@ body {
   }
   .footer-works .info-us .info,
   .present-section .present-text big {
-    font-size: 3.9375vw;
+    font-size: 3.69375vw;
   }
   .cards {
     height: 166vw;
@@ -10264,6 +10264,53 @@ body {
     height: 8.75vw;
     border-radius: 21.875vw;
     margin: 4.375vw auto 2.1875vw;
+  }
+}
+@media ((min-height: 780px) and (max-height: 1280px) and (min-width: 700px) and (max-width: 800px) and (orientation:portrait)) {
+  .menu-links .bl-logo{
+    display: none;
+  }
+  .menu-top .raket-menu-line {
+    visibility: hidden;
+  }
+  .swiper-backface-hidden .swiper-slide img {
+    width: 100%;
+  }
+  .pink-foto-container .foto-content .mob-foto img {
+    width: 100%;
+  }
+  .present-section .img-block img.evenings-tablet-img1 {
+    display: none;
+  }
+  .look-section .look-flex .text-block {
+    top: 53%;
+  }
+  .look-section.evenings {
+    margin-bottom: 70vw;
+  }
+  .look-section .look-flex .look-img.evenings img {
+    top: 50%;
+    width: 100%;
+  }
+  .top-header.side-menu .menu-top .menu-links {
+    width: 100%;
+    border-radius: 0;
+  }
+  .pink-screen .about-bottom .one-grid .one-grid-back {
+    background-size: 100%;
+    background-position: center;
+  }
+  .pink-screen .about-bottom .three-grid {
+    background-size: 65% 100%;
+  }
+  .pink-screen .wt-textblock p {
+    font-size: 22px;
+  }
+  .pink-screen .about-bottom .three-grid .three-grid-text p {
+    font-size: 17px;
+  }
+  .our-team .pers-tab.active-tab .person-cont p {
+    font-size: 15px;
   }
 }
 @media (max-width: 450px) {
