@@ -7082,6 +7082,9 @@ body {
   .first-main .right-bottom .how-items {
     display: none;
   }
+  .our-team .card-next.tablet {
+    display: block;
+  }
   .first-screen .top-header {
     height: 12.22917vw;
   }
