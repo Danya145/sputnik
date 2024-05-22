@@ -7057,7 +7057,7 @@ body {
     padding-right: 2.65625vw;
   }
 }
-@media screen and (min-width: 780px) and (max-width: 1280px) and (min-height: 700px) and (max-height: 800px) and (orientation: landscape) {
+@media only screen and (min-width: 780px) and (max-width: 1280px) and (min-height: 700px) and (max-height: 800px) and (orientation: landscape) {
   .work-page .top-header .raket-menu,
   .text-container .text-block:not(.tablet),
   .present-section .evenings-img-block .evenings-desk-img1,
@@ -7918,7 +7918,7 @@ body {
     left: -4.7%;
   }
 }
-@media screen and ((max-width: 520px) or ((min-height: 780px) and (max-height: 1280px) and (min-width: 700px) and (max-width: 800px) and (orientation:portrait))) {
+@media only screen and ((max-width: 520px) or ((min-height: 780px) and (max-height: 1280px) and (min-width: 700px) and (max-width: 800px))) {
   .footer-black .info-us .logo-us {
     display: none;
   }
@@ -10355,7 +10355,7 @@ body {
     margin: 4.375vw auto 2.1875vw;
   }
 }
-@media screen and ((min-height: 780px) and (max-height: 1280px) and (min-width: 700px) and (max-width: 800px) and (orientation:portrait)) {
+@media only screen and ((min-height: 780px) and (max-height: 1280px) and (min-width: 700px) and (max-width: 800px)) {
   .menu-links .bl-logo,
   .our-team .card-next {
     display: none;
