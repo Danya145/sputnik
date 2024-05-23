@@ -4563,10 +4563,6 @@ body {
   background: #f6edff;
   color: #000;
 }
-.works-page .footer-works {
-  position: relative;
-  z-index: 2;
-}
 .footer-works,
 .w-foot:after {
   background: #161616;
@@ -7057,7 +7053,7 @@ body {
     padding-right: 2.65625vw;
   }
 }
-@media only screen and (min-width: 780px) and (max-width: 1280px) and (min-height: 700px) and (max-height: 800px) and (orientation: landscape) {
+@media only screen and (min-width: 680px) and (max-width: 1280px) and (min-height: 700px) and (max-height: 800px) and (orientation: landscape) {
   .work-page .top-header .raket-menu,
   .text-container .text-block:not(.tablet),
   .present-section .evenings-img-block .evenings-desk-img1,
@@ -7089,7 +7085,7 @@ body {
     height: 12.22917vw;
   }
   .title-top {
-    margin-top: -8%;
+    margin-top: -5%;
   }
   .title-top h1 {
     font-size: 8.6vw;
@@ -7133,7 +7129,6 @@ body {
     left: 0;
     background: rgba(217, 44, 139, 1) !important;
     border-radius: 0 !important;
-    width: 100vw;
     min-height: 100vh;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -7172,34 +7167,37 @@ body {
     width: 32%;
     height: 28%;
   }
-  .menu-line {
-    position: absolute;
+  .menu-line,
+  .scrolled-main-menu-line {
+    position: fixed;
     height: 100vh;
     width: 1.2vw;
+    top: 0;
+    left: 0;
     background: rgba(217, 44, 139, 1);
     border-radius: 0 0 100px;
     z-index: 10;
-  }
-  .menu-line.contacts {
-    margin-left: -1.25vw;
   }
   .main-menu-line {
     position: absolute;
     height: calc(100% + 18.2vw);
     top: -18.2vw;
-    left: -5vw;
+    left: 0;
     z-index: 10;
-    background: #000;
+    background: #161616;
     width: 5vw;
     border-radius: 0;
+    transition: .5s;
   }
-  .main-menu-line.about {
+  .scrolled-main-menu-line {
+    background: #161616;
+  }
+  .main-menu-line.about,
+  .scrolled-main-menu-line.about {
     background: rgba(195, 41, 101, 1);
   }
   .menu-line.parts {
     background: #000;
-    height: 100vh;
-    border-radius: 0;
   }
   .hamburger-menu {
     position: relative;
@@ -7210,7 +7208,8 @@ body {
   }
   .first-screen,
   .pink-screen {
-    margin-left: 5vw;
+    padding-left: 5vw;
+    position: relative;
   }
   .bar {
     position: relative;
@@ -7501,13 +7500,20 @@ body {
   .menu-top .translate-button {
     padding: 0;
     position: absolute;
-    top: 17.5%;
+    top: 93%;
     left: 0.5%;
-    z-index: 10;
+    z-index: 100;
   }
   .menu-top .translate-button img {
     width: 3.97917vw;
     visibility: visible;
+    transition: .5s;
+    margin-left: 0;
+  }
+  .pink-screen.scrolled-min .menu-top .translate-button img,
+  .first-screen.scrolled-min .menu-top .translate-button img {
+    visibility: hidden;
+    margin-left: -5vw;
   }
   .cases-flat {
     background: rgba(243, 45, 122, 1);
@@ -7918,7 +7924,7 @@ body {
     left: -4.7%;
   }
 }
-@media only screen and ((max-width: 520px) or ((min-height: 780px) and (max-height: 1280px) and (min-width: 700px) and (max-width: 800px))) {
+@media only screen and ((max-width: 520px) or ((min-height: 780px) and (max-height: 1280px) and (min-width: 700px) and (max-width: 800px) and (orientation:portrait))) {
   .footer-black .info-us .logo-us {
     display: none;
   }
@@ -10355,7 +10361,7 @@ body {
     margin: 4.375vw auto 2.1875vw;
   }
 }
-@media only screen and ((min-height: 780px) and (max-height: 1280px) and (min-width: 700px) and (max-width: 800px)) {
+@media only screen and ((min-height: 780px) and (max-height: 1280px) and (min-width: 700px) and (max-width: 800px)and (orientation:portrait)) {
   .menu-links .bl-logo,
   .our-team .card-next {
     display: none;
