@@ -623,7 +623,7 @@ body {
   margin-left: -0.52083vw;
   white-space: nowrap;
 }
-@media (max-width: 520px) or ((min-height: 780px) and (max-height: 1280px) and (min-width: 700px) and (max-width: 800px) and (orientation:portrait)) {
+@media (max-width: 520px) or ((min-height: 780px) and (max-height: 1280px) and (min-width: 520px) and (max-width: 800px) and (orientation:portrait)) {
   .menu-links a,
   .menu-top:not(.scrolled-fix).viol-menu .translate-button span {
     color: #161616;
@@ -7053,7 +7053,7 @@ body {
     padding-right: 2.65625vw;
   }
 }
-@media only screen and (min-width: 680px) and (max-width: 1280px) and (min-height: 700px) and (max-height: 800px) and (orientation: landscape) {
+@media only screen and (min-width: 780px) and (max-width: 1280px) and (min-height: 700px) and (max-height: 800px) and (orientation: landscape) {
   .work-page .top-header .raket-menu,
   .text-container .text-block:not(.tablet),
   .present-section .evenings-img-block .evenings-desk-img1,
@@ -7188,6 +7188,7 @@ body {
     width: 5vw;
     border-radius: 0;
     transition: .5s;
+    z-index: 1;
   }
   .scrolled-main-menu-line {
     background: #161616;
@@ -7502,7 +7503,7 @@ body {
     position: absolute;
     top: 93%;
     left: 0.5%;
-    z-index: 100;
+    z-index: 1;
   }
   .menu-top .translate-button img {
     width: 3.97917vw;
@@ -7922,9 +7923,10 @@ body {
   .menu-top .translate-button.about {
     top: 650.5%;
     left: -4.7%;
+    z-index: 1;
   }
 }
-@media only screen and ((max-width: 520px) or ((min-height: 780px) and (max-height: 1280px) and (min-width: 700px) and (max-width: 800px) and (orientation:portrait))) {
+@media only screen and ((max-width: 520px) or ((min-height: 780px) and (max-height: 1280px) and (min-width: 520px) and (max-width: 800px) and (orientation:portrait))) {
   .footer-black .info-us .logo-us {
     display: none;
   }
@@ -10361,7 +10363,12 @@ body {
     margin: 4.375vw auto 2.1875vw;
   }
 }
-@media only screen and ((min-height: 780px) and (max-height: 1280px) and (min-width: 700px) and (max-width: 800px)and (orientation:portrait)) {
+@media(max-width: 520px) {
+  .pink-screen .about-bottom .three-grid .three-grid-text {
+    width: 60vw;
+  }
+}
+@media only screen and ((min-height: 780px) and (max-height: 1280px) and (min-width: 520px) and (max-width: 800px)and (orientation:portrait)) {
   .menu-links .bl-logo,
   .our-team .card-next {
     display: none;
