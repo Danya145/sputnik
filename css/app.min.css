@@ -623,7 +623,7 @@ body {
   margin-left: -0.52083vw;
   white-space: nowrap;
 }
-@media (max-width: 520px) or ((min-height: 780px) and (max-height: 1280px) and (min-width: 520px) and (max-width: 800px) and (orientation:portrait)) {
+@media (max-width: 520px) or (/* (min-height: 700px) and (max-height: 1280px) and  */(min-width: 520px) and (max-width: 800px) ) {
   .menu-links a,
   .menu-top:not(.scrolled-fix).viol-menu .translate-button span {
     color: #161616;
@@ -7053,7 +7053,7 @@ body {
     padding-right: 2.65625vw;
   }
 }
-@media only screen and (min-width: 780px) and (max-width: 1280px) and (min-height: 700px) and (max-height: 800px) and (orientation: landscape) {
+@media only screen and (min-width: 800px) and (max-width: 1280px) /* and (min-height: 700px) and (max-height: 800px) and (orientation: landscape)*/ {
   .work-page .top-header .raket-menu,
   .text-container .text-block:not(.tablet),
   .present-section .evenings-img-block .evenings-desk-img1,
@@ -7381,7 +7381,7 @@ body {
   .swiper-wrapper.tablet {
     display: flex;
     /* width: 100%; */
-    height: 75px;
+    height: 7vw;
   }
   .swiper-wrapper.tablet .swiper-slide {
     height: 100%;
@@ -7926,7 +7926,7 @@ body {
     z-index: 1;
   }
 }
-@media only screen and ((max-width: 520px) or ((min-height: 780px) and (max-height: 1280px) and (min-width: 520px) and (max-width: 800px) and (orientation:portrait))) {
+@media only screen and ((max-width: 520px) or (/* (min-height: 700px) and (max-height: 1280px) and */ (min-width: 520px) and (max-width: 800px) )) {
   .footer-black .info-us .logo-us {
     display: none;
   }
@@ -10368,7 +10368,7 @@ body {
     width: 60vw;
   }
 }
-@media only screen and ((min-height: 780px) and (max-height: 1280px) and (min-width: 520px) and (max-width: 800px)and (orientation:portrait)) {
+@media only screen and (/* (min-height: 700px) and (max-height: 1280px) and*/ (min-width: 520px) and (max-width: 800px)) {
   .menu-links .bl-logo,
   .our-team .card-next {
     display: none;
