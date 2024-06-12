@@ -623,7 +623,7 @@ body {
   margin-left: -0.52083vw;
   white-space: nowrap;
 }
-@media (max-width: 520px) or (/* (min-height: 700px) and (max-height: 1280px) and  */(min-width: 520px) and (max-width: 800px) ) {
+@media (max-width: 520px) or (/* (min-height: 700px) and (max-height: 1280px) and  */(min-width: 520px) and (max-width: 800px)) {
   .menu-links a,
   .menu-top:not(.scrolled-fix).viol-menu .translate-button span {
     color: #161616;
@@ -5326,7 +5326,9 @@ body {
     width: 261px;
   }
   .direct-slider
-    .swiper-slide:not(.swiper-slide-active):not(.swiper-slide-next):not(.swiper-slide-prev):not(.swiper-slide-visible)
+    .swiper-slide:not(.swiper-slide-active):not(.swiper-slide-next):not(.swiper-slide-prev):not(
+      .swiper-slide-visible
+    )
     .direct-card {
     /* -webkit-transform: translateY(-70px) skew(5deg) scale(0.7, 0.9) rotate(-2deg);
     -ms-transform: translateY(-70px) skew(5deg) scale(0.7, 0.9) rotate(-2deg);
@@ -7053,7 +7055,7 @@ body {
     padding-right: 2.65625vw;
   }
 }
-@media only screen and (min-width: 800px) and (max-width: 1280px) /* and (min-height: 700px) and (max-height: 800px) and (orientation: landscape)*/ {
+@media only screen and (min-width: 800px) and (max-width: 1280px) /* and (min-height: 700px) and (max-height: 800px) and (orientation: landscape) */ {
   .work-page .top-header .raket-menu,
   .text-container .text-block:not(.tablet),
   .present-section .evenings-img-block .evenings-desk-img1,
@@ -7187,7 +7189,7 @@ body {
     background: #161616;
     width: 5vw;
     border-radius: 0;
-    transition: .5s;
+    transition: 0.5s;
     z-index: 1;
   }
   .scrolled-main-menu-line {
@@ -7464,7 +7466,7 @@ body {
     top: 90%;
     font-size: 1.5vw;
   }
-  .can-cards.eng h3{
+  .can-cards.eng h3 {
     font-size: 2.75vw;
   }
   .cases-flat.eng .black-btn,
@@ -7508,7 +7510,7 @@ body {
   .menu-top .translate-button img {
     width: 3.97917vw;
     visibility: visible;
-    transition: .5s;
+    transition: 0.5s;
     margin-left: 0;
   }
   .pink-screen.scrolled-min .menu-top .translate-button img,
@@ -7916,10 +7918,12 @@ body {
   .footer-black .info-us .tt-us {
     font-size: 3vw;
   }
-  .footer-black .info-us .tit-info{
+  .footer-black .info-us .tit-info {
     font-size: 2.3vw;
   }
-  .footer-black .info-us .info{font-size: 1.8vw;}
+  .footer-black .info-us .info {
+    font-size: 1.8vw;
+  }
   .menu-top .translate-button.about {
     top: 650.5%;
     left: -4.7%;
@@ -7930,10 +7934,12 @@ body {
   .footer-black .info-us .logo-us {
     display: none;
   }
-  .our-team .card-next{
+  .our-team .card-next {
     display: none;
   }
-  .our-team .card-next.tablet {display: block;}
+  .our-team .card-next.tablet {
+    display: block;
+  }
   .side-line.eng .text-line {
     background-size: 9vw;
   }
@@ -10363,7 +10369,7 @@ body {
     margin: 4.375vw auto 2.1875vw;
   }
 }
-@media(max-width: 520px) {
+@media (max-width: 520px) {
   .pink-screen .about-bottom .three-grid .three-grid-text {
     width: 60vw;
   }
@@ -10427,9 +10433,9 @@ body {
   .direct-slider
     .swiper-slide:not(.swiper-slide-active):not(.swiper-slide-next):not(.swiper-slide-prev)
     .direct-card {
-      filter: none;
-      transform: none;
-    }
+    filter: none;
+    transform: none;
+  }
 }
 @media (max-width: 450px) {
   .look-section.evenings {
