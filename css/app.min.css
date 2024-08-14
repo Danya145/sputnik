@@ -7424,8 +7424,10 @@ body {
   }
   .can-grid-1,
   .can-itm.card6 .card-img {
-    /* padding-top: 18vw; */
     visibility: hidden;
+  }
+  .can-grid-1.eng {
+    padding-top: 2.5vh;
   }
   .bg-can-cards {
     visibility: visible;
@@ -7497,8 +7499,10 @@ body {
     display: block;
     overflow: visible;
     height: 16vw;
-    /* margin-top: -9vw; */
     margin-bottom: 5vw;
+  }
+  .cans-slider-tablet.eng {
+    margin-top: 5vh;
   }
   .menu-top .translate-button {
     padding: 0;
