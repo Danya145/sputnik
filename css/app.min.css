@@ -1,4 +1,20 @@
 @import url(https://fonts.cdnfonts.com/css/random-grotesque-standard);
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 16px;
+  -ms-text-size-adjust: 16px;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  /* -webkit-font-smoothing: subpixel-antialiased; */
+  /* -webkit-font-smoothing: antialiased; */
+}
 body,
 html {
   font-size: 20px;
@@ -389,7 +405,8 @@ body {
 .top-header .menu-top .menu-links .link-project,
 .start-section .story-section .story-imgs.swiper-container,
 .menu-top .translate-button.about,
-.our-team .card-next.tablet {
+.our-team .card-next.tablet,
+.cases-slider .case-slide .case-cover .tablet {
   display: none;
 }
 .title-h.white-h {
@@ -763,8 +780,8 @@ body {
   }
   .menu-top .logo-min {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -10vw;
+    right: -20vw;
     width: 63.4375vw;
     height: 50.3125vw;
     padding-top: 4.375vw;
@@ -7080,7 +7097,8 @@ body {
   .first-main .right-bottom .how-items {
     display: none;
   }
-  .our-team .card-next.tablet {
+  .our-team .card-next.tablet,
+  .cases-slider .case-slide .case-cover .tablet {
     display: block;
   }
   .first-screen .top-header {
@@ -7934,7 +7952,7 @@ body {
     z-index: 1;
   }
 }
-@media only screen and ((max-width: 520px) or (/* (min-height: 700px) and (max-height: 1280px) and */ (min-width: 520px) and (max-width: 800px) )) {
+@media only screen and ((max-width: 520px) or ((min-width: 520px) and (max-width: 800px))) {
   .footer-black .info-us .logo-us {
     display: none;
   }
@@ -8415,7 +8433,7 @@ body {
     height: 0.875vw;
   }
   .can-item {
-    padding: 5.90625vw 4.8125vw;
+    padding: 5.5vw 4.8125vw;
     -webkit-box-shadow: 0 2.1875vw 2.1875vw rgba(0, 0, 0, 0.2);
     box-shadow: 0 2.1875vw 2.1875vw rgba(0, 0, 0, 0.2);
     height: 63.4375vw;
@@ -8465,7 +8483,7 @@ body {
     padding-bottom: 4.375vw;
   }
   .can-item.card-four .can-header h4 {
-    font-size: 4.375vw;
+    font-size: 4.275vw;
   }
   .can-item.card-five {
     padding-right: 4.8125vw;
@@ -10379,6 +10397,9 @@ body {
   }
 }
 @media only screen and (/* (min-height: 700px) and (max-height: 1280px) and*/ (min-width: 520px) and (max-width: 800px)) {
+  .menu-links {
+    padding-top: 26vw;
+  }
   .menu-links .bl-logo,
   .our-team .card-next {
     display: none;
