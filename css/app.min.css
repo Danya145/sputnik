@@ -406,7 +406,8 @@ body {
 .start-section .story-section .story-imgs.swiper-container,
 .menu-top .translate-button.about,
 .our-team .card-next.tablet,
-.cases-slider .case-slide .case-cover .tablet {
+.cases-slider .case-slide .case-cover .tablet,
+.tenbi_purposes_mob {
   display: none;
 }
 .title-h.white-h {
@@ -3321,6 +3322,9 @@ body {
 .work-page .top-header {
   margin-bottom: 2.60417vw;
 }
+.work-page .tenbi_purposes{
+  margin-bottom: 50px;
+}
 .open-screen {
   height: 23.4375vw;
   background-repeat: no-repeat;
@@ -3331,6 +3335,30 @@ body {
 }
 .mobi-section {
   margin-bottom: 7vw;
+}
+.mobi-section.manyFactory,
+.mobi-section.manyFactory .mobi-container .mobi-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobi-section.manyFactory .manyfactory-text {
+  margin-top: 70px;
+  width: 60%;
+  font-family: 'Random Grotesque Standard Medium';
+font-size: 30px;
+text-align: center;
+}
+.mobi-section.manyFactory .mobi-container .mobi-wrapper h3{
+  font-family: 'Random Grotesque Spacious Black';
+font-size: 80px;
+font-style: italic;
+font-weight: 900;
+line-height: 80px;
+text-align: center;
+color: rgba(241, 45, 123, 1);
+text-transform: uppercase;
+margin-bottom: 30px;
 }
 .mobi-section,
 .work-images {
@@ -3395,6 +3423,33 @@ body {
 .open-screen .logo-first.right {
   right: -7.8125vw;
 }
+.rec-section{margin: 100px 0 150px;}
+.rec-section .words{
+  height: 80px;
+  background: url(../img/rec-system.svg) no-repeat center ;
+}
+.rec-section .content{
+  position: relative;
+  width: 100%;
+  height: 630px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: start;
+  align-items: center;
+}
+.rec-section .content p{
+  font-family: 'Random Grotesque Standard Medium';
+font-size: 30px;
+width: 50%;
+
+}
+.rec-section .content img{
+  position: absolute;
+  left: 50%;
+  top: -5%;
+}
+.eff-text.tenbi{margin-bottom: 50px;}
 .eff-text .text-center {
   padding-top: 2.60417vw;
   padding-bottom: 3.125vw;
@@ -3562,6 +3617,7 @@ body {
   font-size: 1.2vw;
   padding: 15px 26px;
 }
+.mobi-section.manyFactory .mobi-text {}
 .mobi-section .mobi-text span a {
   color: #f2f2f2;
 }
@@ -3905,6 +3961,9 @@ body {
   font-size: 4.5vw;
   font-family: "Random Grotesque Spacious Black";
   line-height: 100%;
+}
+.look-section.tenbi .look-flex .text-block .procent {
+  width: 57%;
 }
 .look-section .look-flex .text-block .title span {
   font-size: 6vw;
@@ -4334,6 +4393,14 @@ body {
 .masters-section.tenbi .content {
   height: 1200px;
 }
+.masters-section.system{
+  height: 1050px;
+  padding-top: 6.7vw;
+  margin-bottom: 30px;
+}
+.masters-section.manyFactory  {
+  height:1560px;
+}
 .masters-section .back-words {
   pointer-events: none;
   opacity: 0.05;
@@ -4347,6 +4414,14 @@ body {
   background-size: 100vw auto;
   width: 200vw;
   height: 5.72917vw;
+}
+.masters-section.system .back-words .sol,
+.masters-section.system .back-words .spt {
+  height: 115px;
+}
+.masters-section.manyFactory .back-words .sol,
+.masters-section.manyFactory .back-words .spt {
+  height: 205px;
 }
 .masters-section.tenbi .back-words .sol,
 .masters-section.tenbi .back-words .spt {
@@ -4365,6 +4440,23 @@ body {
   padding: 4.375vw 4.16667vw 4.6875vw 2.1875vw;
   background: #fff;
   min-height: 46.875vw;
+}
+.masters-section.system .masters-text {
+  min-height: 30vw;
+  padding-top: 1.5vw;
+  padding-right: 2.2vw;
+  padding-bottom: 2.25vw;
+}
+.masters-section.system .instruments{
+  top: 75%;
+}
+.masters-section.system .masters-text p,
+.masters-section.system .instruments p{
+  font-family: 'Random Grotesque Standard Medium';
+font-size: 35px;
+}
+.masters-section.system .masters-text h4 {
+  margin-bottom: 100px;
 }
 .masters-section .masters-text h4 {
   font-family: "Random Grotesque Spacious Black";
@@ -6074,6 +6166,12 @@ body {
     width: 33px;
     height: calc(100% + 255px);
   }
+  .mobi-section.manyFactory{
+    height: auto;
+  }
+  .mobi-section.manyFactory .manyfactory-text {
+    width: 80%;
+  }
   .mobi-section .mobi-text {
     padding: 10px 26.6px 6.67px 20px;
     border-radius: 16px;
@@ -6102,6 +6200,12 @@ body {
     border-radius: 33px 0 0 33px;
     -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  .rec-section .words {
+    background-size: 90%;
+  }
+  .rec-section .content img{
+    width: 49vw;
   }
   .descript-section {
     margin: 80px 0;
@@ -6193,6 +6297,12 @@ body {
     padding-top: 10px;
     max-width: 987px;
   }
+  .look-section.tenbi .look-flex {
+    width: 75vw;
+    max-width: 1350px;
+    gap: 30px;
+    height: 97%;
+  }
   .look-section .look-flex .look-img {
     width: 330px;
   }
@@ -6213,6 +6323,9 @@ body {
   .look-section .look-flex .text-block .look-text {
     width: 292px;
     font-size: 24px;
+  }
+  .look-section.tenbi .look-flex .text-block .procent {
+    width: 57%;
   }
   .present-section {
     padding-top: 26.67px;
@@ -6337,6 +6450,9 @@ body {
   .masters-section .back-words {
     top: 26px;
   }
+  .masters-section.tenbi .back-words {
+    top: -20px;
+  }
   .masters-section .back-words .sol,
   .masters-section .back-words .spt {
     height: 75px;
@@ -6348,6 +6464,12 @@ body {
     width: 505px;
     padding: 56px 53px 60px 28px;
     min-height: 603px;
+  }
+  .masters-section.tenbi{
+    margin-bottom: 50px;
+  }
+  .masters-section.tenbi .content {
+    height: 750px;
   }
   .masters-section .masters-text h4 {
     font-size: 40.67px;
@@ -6378,6 +6500,22 @@ body {
     border-radius: 26px;
     -webkit-box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+  }
+  .masters-section.system .instruments {
+    left: 50%;
+    width: 50%;
+  }
+  .masters-section.system .mast-wrapper{
+    left: -5%;
+  }
+  .masters-section.system .masters-text{
+    width: 60%;
+  }
+  .masters-section.manyFactory {
+    height: auto;
+  }
+  .mobi-section.manyFactory .mobi-container .mobi-wrapper img{
+width: 75%;
   }
   .header-works .text-content h3,
   .masters-section .instruments h4 {
@@ -8020,13 +8158,13 @@ body {
   }
 }
 @media only screen and ((max-width: 520px) or ((min-width: 520px) and (max-width: 800px))) {
-  .footer-black .info-us .logo-us {
+  .our-team .card-next ,.footer-black .info-us .logo-us,
+  .tenbi_purposes_desktop {
     display: none;
   }
-  .our-team .card-next {
-    display: none;
-  }
-  .our-team .card-next.tablet {
+  
+  .our-team .card-next.tablet,
+  .tenbi_purposes_mob {
     display: block;
   }
   .side-line.eng .text-line {
@@ -8088,6 +8226,9 @@ body {
   .masters-section .content .logo-mob,
   .works-container {
     z-index: 1;
+  }
+  .masters-section .content .logo-mob{
+    top: 67%;
   }
   .eff-text .line-gradi-evenings {
     height: 105%;
@@ -9370,7 +9511,8 @@ body {
   }
   .eff-text .text-center p,
   .eff-text.work-helper .text-center p,
-  .eff-text .text-justify p {
+  .eff-text .text-justify p,
+  .eff-text.tenbi .text-center p {
     text-align: center;
     font-size: 2.8vw;
   }
@@ -9433,6 +9575,9 @@ body {
     height: auto;
     padding-bottom: 6.5625vw;
   }
+  .mobi-section.tenbi {
+    margin-bottom: 100px;
+  }
   .mobi-section .img-bottom,
   .mobi-section .img-top {
     position: static;
@@ -9460,13 +9605,17 @@ body {
     -ms-transform: scale(0.7) translateX(43%);
     transform: scale(0.7) translateX(43%) !important;
   }
-  .mobi-section .mobi-text {
+  .mobi-section .mobi-text, 
+  .mobi-section.tenbi .mobi-text {
     position: static;
     font-size: 2.84375vw;
     padding: 2.1875vw 3.28125vw 1.75vw 12.03125vw;
     max-width: 86%;
     border-radius: 0 4.375vw 4.375vw 0;
     min-height: 33.6875vw;
+  }
+  .mobi-section.tenbi .mobi-text {
+    font-size: 3.5vw;
   }
   .mobi-section .mobi-text small {
     font-size: 2.84375vw;
@@ -9568,6 +9717,7 @@ body {
     height: 107%;
     border-radius: 100px 0 0;
   }
+  .descript-section.tenbi .title-ribbon.right.five-names,
   .descript-section .title-ribbon.right.five-names.evenings {
     border-radius: 100px 0 0 100px;
   }
@@ -9576,6 +9726,7 @@ body {
     height: 107%;
     border-radius: 0 100px 0 0;
   }
+  .descript-section.tenbi .title-ribbon.left.five-names,
   .descript-section .title-ribbon.left.five-names.evenings {
     border-radius: 0 100px 100px 0;
   }
@@ -9591,6 +9742,9 @@ body {
   .present-section .logo-max {
     margin-left: auto;
     margin-right: auto;
+  }
+  .look-section.tenbi{
+    height: auto;
   }
   .descript-section .text-container .text-block {
     margin-top: 15.3125vw;
@@ -9713,7 +9867,8 @@ body {
     width: 100%;
     max-width: 100%;
   }
-  .look-section .look-flex .look-img {
+  .look-section .look-flex .look-img,
+  .look-section.tenbi .look-flex .look-img {
     width: 52.5vw;
     margin-bottom: 13.5625vw;
   }
@@ -9726,7 +9881,14 @@ body {
     box-shadow: 0 1.09375vw 4.375vw rgba(0, 0, 0, 0.6);
     margin-top: -13.125vw;
   }
-  .look-section .look-flex .text-block {
+  .look-section.tenbi .look-flex .look-img img {
+    margin-top: 13vw;
+  }
+  .look-section.tenbi .logo-look{
+    top: 40%;
+  }
+  .look-section .look-flex .text-block,
+  .look-section.tenbi .look-flex .text-block {
     width: 100%;
     padding: 6.5625vw 4.375vw 4.375vw 2.1875vw;
     gap: 4.375vw;
@@ -9734,6 +9896,8 @@ body {
     position: relative;
     min-height: 32.8125vw;
   }
+  .look-section.tenbi .look-flex .text-block{min-height: 23vw;
+  height: 30vw;}
   .look-section .look-flex .text-block:before {
     content: "";
     display: block;
@@ -9756,11 +9920,19 @@ body {
     font-size: 10.9375vw;
     width: 37.1875vw;
   }
+  .look-section.tenbi .look-flex .text-block .procent,
+  .look-section .look-flex .text-block .title,
+  .look-section .look-flex .text-block .title span {
+    text-align: center;
+    font-size: 9.9375vw;
+    width: 37.1875vw;
+  }
   .look-section .look-flex .text-block .procent.evenings {
     font-size: 16vw;
     text-align: center;
   }
-  .look-section .look-flex .text-block .look-text {
+  .look-section .look-flex .text-block .look-text,
+  .look-section.tenbi .look-flex .text-block .look-text {
     width: 46.8125vw;
     font-size: 3.17188vw;
     line-height: 1.3;
@@ -9999,6 +10171,9 @@ body {
     padding-top: 17.5vw;
     padding-bottom: 2.1875vw;
     margin-bottom: -4.375vw;
+  }
+  .masters-section.tenbi .content {
+    height: auto;
   }
   .masters-section .content,
   .masters-section .mast-wrapper {
