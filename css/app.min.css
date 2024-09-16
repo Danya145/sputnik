@@ -407,7 +407,10 @@ body {
 .menu-top .translate-button.about,
 .our-team .card-next.tablet,
 .cases-slider .case-slide .case-cover .tablet,
-.tenbi_purposes_mob {
+.laptop-section.manyFactory .mob-laptop,
+.tenbi_purposes_mob,
+.manyfactory.modules,
+.rec-section h3 {
   display: none;
 }
 .title-h.white-h {
@@ -3336,25 +3339,22 @@ body {
 .mobi-section {
   margin-bottom: 7vw;
 }
-.mobi-section.manyFactory,
-.mobi-section.manyFactory .mobi-container .mobi-wrapper{
+.laptop-section.manyFactory,
+.laptop-section.manyFactory .laptop-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.mobi-section.manyFactory .manyfactory-text {
+.laptop-section.manyFactory .manyfactory-text {
   margin-top: 70px;
   width: 60%;
   font-family: 'Random Grotesque Standard Medium';
 font-size: 30px;
 text-align: center;
 }
-.mobi-section.manyFactory .mobi-container .mobi-wrapper h3{
+.laptop-section.manyFactory .laptop-container h3{
   font-family: 'Random Grotesque Spacious Black';
 font-size: 80px;
-font-style: italic;
-font-weight: 900;
-line-height: 80px;
 text-align: center;
 color: rgba(241, 45, 123, 1);
 text-transform: uppercase;
@@ -3617,7 +3617,6 @@ width: 50%;
   font-size: 1.2vw;
   padding: 15px 26px;
 }
-.mobi-section.manyFactory .mobi-text {}
 .mobi-section .mobi-text span a {
   color: #f2f2f2;
 }
@@ -8158,14 +8157,113 @@ width: 75%;
   }
 }
 @media only screen and ((max-width: 520px) or ((min-width: 520px) and (max-width: 800px))) {
-  .our-team .card-next ,.footer-black .info-us .logo-us,
-  .tenbi_purposes_desktop {
+  .our-team .card-next ,
+  .footer-black .info-us .logo-us,
+  .tenbi_purposes_desktop,
+  .modules_img,
+  .rec-section .words  {
     display: none;
   }
   
   .our-team .card-next.tablet,
-  .tenbi_purposes_mob {
+  .tenbi_purposes_mob,
+  .manyfactory.modules,
+  .rec-section h3 {
     display: block;
+  }
+  .tenbi_purposes_mob{
+    width: 90%;margin: 0 auto 50px;
+  }
+  .manyfactory.modules{
+    margin-top: 80px;
+  }
+  .manyfactory.modules h3{
+    font-family: 'Random Grotesque Spacious Black';
+font-size: 11dvw;
+text-align: center;
+  }
+  .manyfactory.modules p {
+    font-family: 'Random Grotesque Standard Medium';
+font-size: 4dvw;
+text-align: center;
+margin: 20px 0;
+  }
+  .manyfactory.modules .colorfull{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .manyfactory.modules .colorfull p{
+    margin: 0;
+    text-transform: uppercase;
+    padding: 2vw 6vw;
+text-align: left;
+    font-family: 'Random Grotesque Standard Medium';
+font-size: 8vw;
+    width: 80%;
+    border-radius: 40px;
+    color: white;
+  }
+  .manyfactory.modules .colorfull p:nth-child(odd){
+    background: rgba(234, 45, 128, 1);
+  }
+  .manyfactory.modules .colorfull p:nth-child(even){
+    background: rgba(147, 43, 188, 1);
+  }
+  .rec-section {
+    margin-bottom: 50px;
+  }
+  .rec-section h3{
+    padding-left: 4.8vw;
+    white-space: pre-line;
+    font-family: 'Random Grotesque Spacious Black';
+font-size: 47.52px;
+color: rgb(147, 43, 188);
+  }
+  .rec-section .content {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .rec-section .content p{
+    font-size: 4vw;
+    width: 100%;
+  }
+  .rec-section .content img {
+    position: static;
+    margin-left: 15vw;
+    width: 130vw; 
+    max-width: none;
+  }
+  .laptop-section.manyFactory .manyfactory-text {
+    width: 90%;text-align: left;
+    font-size: 4vw;
+    margin: 30px 0;
+  }
+  .laptop-section.manyFactory .laptop-container h3 {
+    font-size: 8vw;
+  }
+  .laptop-section.manyFactory img{
+    width: 170vw;
+    max-width: none;
+  }
+  .laptop-section.manyFactory .laptop-container img{
+    margin-left: 55vw;
+  }
+  .laptop-section.manyFactory .mob-laptop{
+    margin-left: -55vw;
+  }
+  .masters-section.system {
+    margin-top: 50px;
+  }
+  .masters-section.system .masters-text h4 {
+    margin-bottom: 30px;
+  }
+  .masters-section.system .masters-text p,     .masters-section.system .instruments p{
+    font-size: 4vw;
+  }
+  .masters-section.system .instruments {
+    padding: 7.5vw 4vw;
   }
   .side-line.eng .text-line {
     background-size: 9vw;
@@ -8227,7 +8325,7 @@ width: 75%;
   .works-container {
     z-index: 1;
   }
-  .masters-section .content .logo-mob{
+  .masters-section.tenbi .content .logo-mob{
     top: 67%;
   }
   .eff-text .line-gradi-evenings {
@@ -8588,7 +8686,8 @@ width: 75%;
   .look-section .look-fon.desk.evenings,
   .open-screen .logo-first.only-mob,
   .pink-foto-container .foto-content .mob-foto,
-  .scroll-section .mobile-version {
+  .scroll-section .mobile-version,
+  .laptop-section.manyFactory .mob-laptop {
     display: block;
   }
   .look-section.evenings .look-fon.mob {
@@ -9452,6 +9551,10 @@ width: 75%;
   .open-screen.max-h {
     height: 62.5625vw;
   }
+  .open-screen.manyfactory {
+    background-size: 100%;
+    background-color:  rgba(57, 143, 255, 1);
+  }
   .open-screen .fon-mob {
     display: block;
     position: absolute;
@@ -9515,6 +9618,12 @@ width: 75%;
   .eff-text.tenbi .text-center p {
     text-align: center;
     font-size: 2.8vw;
+  }
+  .eff-text.tenbi .text-center {
+    max-width: 90vw;
+  }
+  .eff-text.tenbi .text-center p{
+    padding-top: 7vw;
   }
   .work-images {
     height: auto;
@@ -9717,6 +9826,7 @@ width: 75%;
     height: 107%;
     border-radius: 100px 0 0;
   }
+  .descript-section.manyfactory .title-ribbon.right.five-names,
   .descript-section.tenbi .title-ribbon.right.five-names,
   .descript-section .title-ribbon.right.five-names.evenings {
     border-radius: 100px 0 0 100px;
@@ -9726,6 +9836,7 @@ width: 75%;
     height: 107%;
     border-radius: 0 100px 0 0;
   }
+  .descript-section.manyfactory .title-ribbon.left.five-names,
   .descript-section.tenbi .title-ribbon.left.five-names,
   .descript-section .title-ribbon.left.five-names.evenings {
     border-radius: 0 100px 100px 0;
@@ -10187,11 +10298,34 @@ width: 75%;
     height: 10.9375vw;
     background-size: 150vw auto;
   }
-  .masters-section .logo-mob {
+  .masters-section .logo-mob,
+  .masters-section.system .logo-mob{
     display: block;
     position: absolute;
     bottom: 37.1875vw;
     width: 27.125vw;
+  }
+  .masters-section.system .content .logo-mob{
+    top: 39%;
+  }
+  .masters-section.system .logo-max {
+    top: 3vw;
+    right: -4vw;
+  }
+  .masters-section.system,
+  .masters-section.manyFactory,
+  .rec-section .content  {
+    height: auto;
+  }
+  .masters-section.system .back-words .sol, .masters-section.system .back-words .spt  {
+    height: 50px;
+  }
+  .masters-section.manyFactory .back-words,
+  .masters-section.system .back-words {
+      top: 0;
+  }
+  .masters-section.manyFactory .back-words .sol, .masters-section.manyFactory .back-words .spt {
+    height: 110px;
   }
   .masters-section .masters-text {
     border-radius: 5.46875vw;
@@ -10636,6 +10770,9 @@ width: 75%;
 @media (max-width: 520px) {
   .pink-screen .about-bottom .three-grid .three-grid-text {
     width: 60vw;
+  }
+  .masters-section.manyFactory .back-words .sol, .masters-section.manyFactory .back-words .spt{
+    height: 65px;
   }
 }
 @media only screen and (/* (min-height: 700px) and (max-height: 1280px) and*/ (min-width: 520px) and (max-width: 800px)) {
