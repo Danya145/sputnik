@@ -7325,6 +7325,62 @@ width: 75%;
   .menu-top.scrolled-fix {
     position: absolute;
   }
+  .masters-section.tenbi{
+    padding-top: 0;
+  }
+  .masters-section.tenbi .content {
+    height: auto;
+    margin-bottom: 100px;
+    padding-top: 100px;
+  }
+  .masters-section.tenbi .instruments {
+    top: 62%;
+  }
+  .descript-section.tenbi {
+    margin-bottom: 0;
+  }
+  .rec-section{
+    margin: 50px 0;
+  }
+  .rec-section .words {
+    background-size: 90%;
+  }
+  .rec-section .content{
+    padding-left: 5.5vw;
+    height: auto;
+  }
+  .rec-section .content img {
+    width: 53%;
+    top: -8%;
+  }
+  .rec-section .content p{
+    font-size: 2.5vw;
+  }
+  .laptop-section.manyFactory .manyfactory-text {
+    width: 90%;
+  }
+  .masters-section.system .masters-text p, 
+  .masters-section.system .instruments p,
+  .laptop-section.manyFactory .manyfactory-text {
+    font-size: 2.5vw;
+  }
+  .masters-section.system .instruments {
+    top: 72%;
+  }
+  .masters-section.system .masters-text h4 {
+    margin-bottom: 45px;
+  }
+  .masters-section.system,
+  .masters-section.manyFactory {
+    height: auto;
+    padding: 100px 0;
+  }
+  .masters-section.system{
+    padding-bottom: 250px;
+  }
+  .mobi-section .img-top .phone {
+    margin-top: -15px;
+  }
   .top-header.side-menu .menu-top .menu-links li:first-child {
     margin-left: 0;
   }
